@@ -12,3 +12,7 @@
   border: purple 15px dashed;
   transition: all ease-in 1s;
 }
+
+.profile {
+  font-family: "Tajawal", sans-serif;
+}

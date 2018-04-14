@@ -2,7 +2,7 @@
   "name": "pallath-two-point-oh",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jpallath.github.io/jerrypallath.com2/",
+  "homepage": "https://jpallath.github.io/jerrypallath.com2",
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
