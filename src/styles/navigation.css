@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+  background: black;
+}
+
+nav a {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: all ease-in 1s;
+}
+
+nav a:hover {
+  color: grey;
+  border-left: 5px dotted white;
+  border-right: 5px dotted white;
+}

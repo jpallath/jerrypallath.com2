@@ -1,0 +1,14 @@
+.profile-pic {
+  width: 35%;
+  margin: 20px;
+  float: left;
+  transition: all ease-in 1s;
+  border: transparent 1px solid;
+  transform: scale(1);
+}
+
+.profile-pic:hover {
+  transform: scale(0.9);
+  border: purple 15px dashed;
+  transition: all ease-in 1s;
+}

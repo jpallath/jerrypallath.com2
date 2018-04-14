@@ -1,0 +1,28 @@
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 60%;
+}
+
+.description {
+  width: 60%;
+}
+
+.inactive {
+  width: 0;
+}
+
+.inactive p,
+.inactive h3,
+.inactive a {
+  display: none;
+}
+
+.active {
+  width: 100%;
+}
