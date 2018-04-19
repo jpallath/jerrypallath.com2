@@ -32,11 +32,22 @@ class Projects extends Component {
       ],
       currentId: 0
     };
-    this.showClick = this.showClick.bind(this);
+    this.plusClick = this.plusClick.bind(this);
+    this.minusClick = this.minusClick.bind(this);
   }
 
-  showClick = e => {
+  plusClick = e => {
     let newId = this.state.currentId + 1;
+    if (newId === 2) {
+      newId = 0;
+    }
+    this.setState({
+      currentId: newId
+    });
+  };
+
+  minusClick = e => {
+    let newId = this.state.currentId - 1;
     if (newId === 2) {
       newId = 0;
     }
@@ -53,8 +64,14 @@ class Projects extends Component {
       />
     ));
     return (
-      <div className="project-box" onClick={this.showClick}>
+      <div className="project-box">
+        <div onClick={this.minusClick} className="button left">
+          <i className="fas fa-angle-double-left" />
+        </div>
         {projects}
+        <div onClick={this.plusClick} className="button right">
+          <i className="fas fa-angle-double-right" />
+        </div>
       </div>
     );
   }
