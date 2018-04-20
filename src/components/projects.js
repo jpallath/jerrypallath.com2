@@ -21,7 +21,8 @@ class Projects extends Component {
             "App is built with a responsive design.  Future development with this project would be to add Redux functionality and wiring it to a database and back-end."
           ],
           picture: fanload,
-          github: "https://github.com/jpallath/airplane"
+          github: "https://github.com/jpallath/airplane",
+          link: "https://fast-beyond-80616.herokuapp.com/"
         },
         {
           id: 1,
@@ -48,7 +49,7 @@ class Projects extends Component {
             "I needed to make a new portfolio site that let me show off my React skills."
           ],
           picture: pallathdotcom,
-          github: "https://github.com/jpallath/errypallath.com2"
+          github: "https://github.com/jpallath/jerrypallath.com2"
         },
         {
           id: 4,

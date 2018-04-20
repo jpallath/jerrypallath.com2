@@ -4,6 +4,14 @@ body {
   font-family: sans-serif;
 }
 
+.profile,
+.project-box,
+.links {
+  position: relative;
+  left: 100vw;
+  animation: fadein 1.5s forwards;
+}
+
 .button {
   z-index: 100;
   position: absolute;
@@ -23,9 +31,18 @@ body {
 }
 
 .button.right {
-  right: 20px;
+  right: 5px;
 }
 
 .button.left {
-  left: 20px;
+  left: 5px;
+}
+
+@keyframes fadein {
+  50% {
+    transform: translateX(-125vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
 }
