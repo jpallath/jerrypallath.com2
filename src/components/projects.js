@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import ProjectItem from "./projectItem";
 import fanload from "../images/fanload.png";
 import socialCardMaker from "../images/socialcardmaker.png";
+import weatherly from "../images/weatherly.png";
+import pallathdotcom from "../images/pallathcom.png";
+import reactiveInventory from "../images/reactiveinventory.png";
 
 import "../styles/projects.css";
 
@@ -28,6 +31,33 @@ class Projects extends Component {
           ],
           picture: socialCardMaker,
           github: "https://github.com/jpallath/socialcardmaker"
+        },
+        {
+          id: 2,
+          title: "Weatherly",
+          project: [
+            "I wanted to show my mastery of React Router, and show that I can specify specific locations to update with a render."
+          ],
+          picture: weatherly,
+          github: "https://github.com/jpallath/weatherly"
+        },
+        {
+          id: 3,
+          title: "JerryPallath.com",
+          project: [
+            "I needed to make a new portfolio site that let me show off my React skills."
+          ],
+          picture: pallathdotcom,
+          github: "https://github.com/jpallath/errypallath.com2"
+        },
+        {
+          id: 4,
+          title: "Reactive Inventory",
+          project: [
+            "Quick project utilizing React while I was flying in a plane"
+          ],
+          picture: reactiveInventory,
+          github: "https://github.com/jpallath/inventory"
         }
       ],
       currentId: 0
@@ -38,7 +68,7 @@ class Projects extends Component {
 
   plusClick = e => {
     let newId = this.state.currentId + 1;
-    if (newId === 2) {
+    if (newId === 5) {
       newId = 0;
     }
     this.setState({
@@ -48,8 +78,8 @@ class Projects extends Component {
 
   minusClick = e => {
     let newId = this.state.currentId - 1;
-    if (newId === 2) {
-      newId = 0;
+    if (newId === -1) {
+      newId = 4;
     }
     this.setState({
       currentId: newId
