@@ -7,7 +7,26 @@ class Profile extends Component {
   render() {
     return (
       <div className="profile">
-        <img src={JerryP1} alt="Jerry" className="profile-pic" />
+        <div className="image-container">
+          <img src={JerryP1} alt="Jerry" className="profile-pic" />
+          <div className="image-links">
+            <a href="https://github.com/jpallath">
+              <i className="fab fa-github" />
+            </a>
+            <a href="https://www.linkedin.com/in/jpallath">
+              <i className="fab fa-linkedin-in" />
+            </a>
+            <a href="https://www.facebook.com/jpallath">
+              <i className="fab fa-facebook-f" />
+            </a>
+            <a href="https://twitter.com/Pallethechu">
+              <i className="fab fa-twitter" />
+            </a>
+            <a href="https://www.instagram.com/shotsbybear/">
+              <i className="fab fa-instagram" />
+            </a>
+          </div>
+        </div>
         <div className="person">
           <h1>Jerry Pallath</h1>
           <p>
