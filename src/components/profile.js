@@ -8,7 +8,7 @@ class Profile extends Component {
     return (
       <div className="profile">
         <img src={JerryP1} alt="Jerry" className="profile-pic" />
-        <div>
+        <div className="person">
           <h1>Jerry Pallath</h1>
           <p>
             There’s a lot of words that can describe Jerry Pallath. A quitter

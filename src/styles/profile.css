@@ -16,3 +16,24 @@
 .profile {
   font-family: "Tajawal", sans-serif;
 }
+
+.person {
+  width: 90%;
+}
+
+@media only screen and (max-device-width: 411px) {
+  .profile {
+    display: flex;
+    font-family: "Tajawal", sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-pic {
+    width: 50%;
+  }
+  .person {
+    width: 90%;
+    margin: 0 10%;
+  }
+}
