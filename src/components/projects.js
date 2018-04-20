@@ -49,7 +49,8 @@ class Projects extends Component {
             "I needed to make a new portfolio site that let me show off my React skills."
           ],
           picture: pallathdotcom,
-          github: "https://github.com/jpallath/jerrypallath.com2"
+          github: "https://github.com/jpallath/jerrypallath.com2",
+          link: "http://www.jerrypallath.com/"
         },
         {
           id: 4,
