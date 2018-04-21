@@ -18,7 +18,7 @@ class Contact extends Component {
     return (
       <div>
         <div className={this.state.className} onClick={this.showForm}>
-          <i className="fas fa-envelope" />
+          <i className="fas fa-envelope" onClick={this.showForm} />
         </div>
         <div className={this.state.showForm}>
           <form
