@@ -58,7 +58,7 @@
     align-items: center;
   }
   .profile-pic {
-    width: 50%;
+    width: 80%;
   }
   .person {
     width: 90%;
@@ -68,6 +68,6 @@
 
 @media only screen and (min-device-width: 1200px) {
   .profile-pic {
-    width: 55%;
+    width: 85%;
   }
 }
