@@ -16,7 +16,7 @@ class App extends Component {
           <Route exact path="/" render={props => <Profile />} />
           <Route exact path="/projects" render={props => <Projects />} />
           <Route exact path="/links" render={props => <Links />} />
-          <Route exact path="/contact" render={props => <Contact />} />
+          <Contact />
         </div>
       </BrowserRouter>
     );
