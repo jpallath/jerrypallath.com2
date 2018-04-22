@@ -13,8 +13,8 @@ class Navigation extends Component {
         <Link to="/projects">
           <div>Projects</div>
         </Link>
-        <Link to="/links">
-          <div>Links</div>
+        <Link to="/experience">
+          <div>Experience</div>
         </Link>
       </nav>
     );
