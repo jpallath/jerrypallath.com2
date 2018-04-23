@@ -7,7 +7,7 @@ body {
 
 .profile,
 .project-box,
-.links {
+.experience {
   position: relative;
   left: 100vw;
   animation: fadein 1.5s forwards;
