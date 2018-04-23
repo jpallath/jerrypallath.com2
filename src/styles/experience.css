@@ -30,7 +30,8 @@ ul.job-projects,
   display: flex;
   flex-wrap: wrap;
   align-items: left;
-  justify-content: left;
+  justify-content: center;
+  align-content: center;
 }
 
 .skills li {
