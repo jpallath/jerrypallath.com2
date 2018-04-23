@@ -12,7 +12,8 @@
 .job-container h3 {
   text-align: center;
 }
-.job-container.og {
+.job-container.og,
+.skills .og {
   background-color: rgba(0, 0, 0, 0.5);
 }
 ul.job-projects {
@@ -21,4 +22,22 @@ ul.job-projects {
 }
 .job-projects li {
   margin: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills li {
+  margin: 5px;
+}
+
+.skills .og {
+  text-align: center;
+  padding: 1px;
+  border-bottom: 2px solid black;
 }

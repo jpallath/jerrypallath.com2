@@ -5,6 +5,27 @@ class Experience extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      skills: [
+        "Node.js",
+        "Ruby on Rails",
+        "PHP",
+        "WordPress",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "HTML5/CSS3",
+        "JavaScript",
+        "Ruby",
+        "jQuery",
+        "React/Redux",
+        "Angular.js",
+        "Responsive Design",
+        "SASS/SCSS",
+        "Gulp/Grunt",
+        "Jasmine (Unit Testing)",
+        "JIRA",
+        "Git / Github"
+      ],
       experience: [
         {
           id: 0,
@@ -48,12 +69,23 @@ class Experience extends Component {
         </ul>
       </div>
     ));
+    const skills = this.state.skills.map((skill, index) => (
+      <li key={index}>{skill}</li>
+    ));
     return (
       <div className="experience">
-        <div className="job-container og">
-          <h3>Previous Experience</h3>
+        <div className="jobs-box">
+          <div className="job-container og">
+            <h3>Previous Experience</h3>
+          </div>
+          {jobs}
         </div>
-        {jobs}
+        <div className="skills">
+          <div className="og">
+            <h3>Skills</h3>
+          </div>
+          <ul>{skills}</ul>
+        </div>
       </div>
     );
   }
