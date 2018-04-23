@@ -29,9 +29,9 @@ ul.job-projects,
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: left;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-evenly;
 }
 
 .skills li {
