@@ -17,7 +17,8 @@
 }
 ul.job-projects {
   list-style: none;
+  padding: 0;
 }
 .job-projects li {
-  margin: 10px 0;
+  margin: 20px;
 }
