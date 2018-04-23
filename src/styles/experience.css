@@ -16,7 +16,8 @@
 .skills .og {
   background-color: rgba(0, 0, 0, 0.5);
 }
-ul.job-projects {
+ul.job-projects,
+ul.skills {
   list-style: none;
   padding: 0;
 }
