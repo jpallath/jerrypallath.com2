@@ -79,6 +79,7 @@ body {
   width: 60%;
   background: black;
   color: white;
+  z-index: 100;
   transition: all 1s ease-in;
 }
 
