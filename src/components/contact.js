@@ -39,7 +39,12 @@ class Contact extends Component {
               <label htmlFor="entry.923648969">Message: </label>
               <textarea height="24" type="text" name="entry.923648969" />
             </p>
-            <input onClick={this.showForm} type="submit" value="Contact Me" />
+            <input
+              className="subbed"
+              onClick={this.showForm}
+              type="submit"
+              value="Contact Me"
+            />
           </form>
         </div>
       </div>
