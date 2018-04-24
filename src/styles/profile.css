@@ -51,6 +51,10 @@
   width: 90%;
 }
 
+.person h1 {
+  font-family: "Arimo", sans-serif;
+}
+
 .person p {
   margin: 1%;
 }

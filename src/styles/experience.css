@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid black;
+  font-family: "Tajawal", sans-serif;
 }
 .job-container h3 {
   text-align: center;
@@ -15,6 +16,7 @@
 .job-container.og,
 .skills .og {
   background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Arimo", sans-serif;
 }
 ul.job-projects,
 .skills ul {
@@ -34,6 +36,7 @@ ul.job-projects,
   align-content: center;
   width: 80%;
   margin: 10px auto;
+  font-family: "Tajawal", sans-serif;
 }
 
 .skills li {

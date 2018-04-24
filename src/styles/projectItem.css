@@ -18,6 +18,10 @@ img {
   align-items: center;
 }
 
+.description p {
+  align-self: left;
+}
+
 .projectlinks {
   display: flex;
   justify-content: space-between;

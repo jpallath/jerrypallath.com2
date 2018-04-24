@@ -30,7 +30,7 @@ class Profile extends Component {
         <div className="person">
           <h1>Jerry Pallath</h1>
           <p>
-            There’s a lot of words that can describe Jerry Pallath. A quitter
+            There are a lot of words that can describe Jerry Pallath. A quitter
             isn’t one of them. Developer, technologist, innovator—those are
             words that he probably likes.{" "}
           </p>
