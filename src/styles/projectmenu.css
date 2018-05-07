@@ -1,0 +1,36 @@
+.project-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  margin-left: -250px;
+  bottom: 2%;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.project-menu div {
+  padding: 10px;
+  border: 1px solid white;
+  transition: all 0.5s linear;
+}
+
+.project-menu div:hover {
+  cursor: pointer;
+  border-color: grey;
+  color: grey;
+}
+
+@media screen and (max-width: 450px) {
+  .project-menu {
+    top: 6%;
+    bottom: auto;
+    font-size: 8px;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}

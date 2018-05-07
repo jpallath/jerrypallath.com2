@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ProjectMenu from "./projectmenu";
 import ProjectItem from "./projectItem";
 import fanload from "../images/fanload.png";
 import socialCardMaker from "../images/socialcardmaker.png";
@@ -72,6 +73,7 @@ class Projects extends Component {
     };
     this.plusClick = this.plusClick.bind(this);
     this.minusClick = this.minusClick.bind(this);
+    this.menuChange = this.menuChange.bind(this);
   }
 
   plusClick = e => {
@@ -93,6 +95,10 @@ class Projects extends Component {
       currentId: newId
     });
   };
+
+  menuChange = propId => {
+    this.setState({ currentId: propId });
+  };
   render() {
     const projects = this.state.projects.map(project => (
       <ProjectItem
@@ -102,14 +108,21 @@ class Projects extends Component {
       />
     ));
     return (
-      <div className="project-box">
-        <div onClick={this.minusClick} className="button left">
-          <i className="fas fa-angle-double-left" />
+      <div>
+        <div className="project-box">
+          <div onClick={this.minusClick} className="button left">
+            <i className="fas fa-angle-double-left" />
+          </div>
+          {projects}
+          <div onClick={this.plusClick} className="button right">
+            <i className="fas fa-angle-double-right" />
+          </div>
         </div>
-        {projects}
-        <div onClick={this.plusClick} className="button right">
-          <i className="fas fa-angle-double-right" />
-        </div>
+        <ProjectMenu
+          projects={this.state.projects}
+          currentId={this.state.currentId}
+          menuChange={this.menuChange.bind(this)}
+        />
       </div>
     );
   }
