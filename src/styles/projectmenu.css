@@ -28,7 +28,9 @@
 
 @media screen and (max-width: 450px) {
   .project-menu {
-    top: 40px;
+    top: 0;
+    padding-top: 40px;
+    z-index: 9;
     bottom: auto;
     font-size: 8px;
     left: 0;
