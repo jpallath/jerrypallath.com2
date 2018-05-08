@@ -12,6 +12,7 @@
   padding: 10px;
   opacity: 0;
   animation: enter 1.5s forwards;
+  z-index: 101;
 }
 
 .project-menu div {

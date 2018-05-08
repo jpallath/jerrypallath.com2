@@ -73,7 +73,9 @@ body {
 .form.hidden {
   opacity: 0;
 }
-
+.form.shown {
+  z-index: 101;
+}
 .form.shown,
 .form.hidden {
   position: fixed;
@@ -86,7 +88,6 @@ body {
   width: 60%;
   background: black;
   color: white;
-  z-index: 100;
   transition: all 1s ease-in;
 }
 
