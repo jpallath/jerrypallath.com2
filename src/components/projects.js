@@ -6,6 +6,7 @@ import socialCardMaker from "../images/socialcardmaker.png";
 import weatherly from "../images/weatherly.png";
 import pallathdotcom from "../images/pallathcom.png";
 import reactiveInventory from "../images/reactiveinventory.png";
+import weddingSite from "../images/WeddingSite.png";
 
 import "../styles/projects.css";
 
@@ -16,6 +17,20 @@ class Projects extends Component {
       projects: [
         {
           id: 0,
+          title: "Wedding Site",
+          project: [
+            "I volunteered to build a Wedding Site for my sister. I had to build out a few different components for this project.",
+            "Used a variety of CSS styles; which included adding parallax effects, animations on load, and specific CSS transitions based on new style names given by my React/JS code",
+            "In the Gallery container, I used Flickr's Photoset Get Photos API Call to continuously load new photos into my component.  I called the API whenever the user scrolled all the way to the bottom of the page to cause an infinite scroll effect which is only limited by the number of photos in the album",
+            "The Festivities container used the Google Maps API so that I can first center the location of the venue and also place a marker on the venue.",
+            "RSVP container used a Google Forms back-end so that my sister and her fiance can follow who's interacting with the site without building an entire back-end for them to log into."
+          ],
+          picture: weddingSite,
+          github: "https://github.com/jpallath/sherrys_wedding",
+          link: "http://www.thepainumkals.com/"
+        },
+        {
+          id: 1,
           title: "FanLoad",
           project: [
             "The goal of this project was to cement my react skills.  This project utilized React, React-Router, and State Manipulation.  The user is greeted with a list of all available articles that they can read.  The app allows them to add new entries into the list and navigate to them",
@@ -28,7 +43,7 @@ class Projects extends Component {
           link: "https://fast-beyond-80616.herokuapp.com/"
         },
         {
-          id: 1,
+          id: 2,
           title: "SocialCardMaker",
           project: [
             "This was my first original project utilizing React and React-Router.  I looked at ideas on the internet on what to develop with React once you've learned the framework.  I saw this to be a great starting point in jumping in with zero experience",
@@ -38,7 +53,7 @@ class Projects extends Component {
           github: "https://github.com/jpallath/socialcardmaker"
         },
         {
-          id: 2,
+          id: 3,
           title: "Weatherly",
           project: [
             "I wanted to show my mastery of React Router, and show that I can specify specific locations to update with a render.",
@@ -48,7 +63,7 @@ class Projects extends Component {
           github: "https://github.com/jpallath/weatherly"
         },
         {
-          id: 3,
+          id: 4,
           title: "JerryPallath.com",
           project: [
             "I needed to make a new portfolio site that let me show off my React skills.",
@@ -59,7 +74,7 @@ class Projects extends Component {
           link: "http://www.jerrypallath.com/"
         },
         {
-          id: 4,
+          id: 5,
           title: "Reactive Inventory",
           project: [
             "Quick project utilizing React while I was flying in a plane",
