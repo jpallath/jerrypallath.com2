@@ -9,7 +9,7 @@
 
 .profile-pic:hover {
   transform: scale(0.9);
-  border: purple 15px dashed;
+  border: #533a71 15px dashed;
   transition: all ease-in 1s;
 }
 
@@ -34,13 +34,13 @@
 .image-links a {
   margin: 0 10px;
   font-size: 20px;
-  color: purple;
+  color: #533a71;
   transition: color 0.5s linear;
 }
 
 .image-links a:hover {
   cursor: pointer;
-  color: black;
+  color: #50c5b7;
 }
 
 .image-container img {

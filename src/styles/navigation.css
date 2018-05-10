@@ -3,7 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0%;
-  background: black;
+  background: #533a71;
   height: 2.5rem;
   z-index: 10;
 }
@@ -18,13 +18,13 @@ nav a {
 }
 
 nav a {
-  color: white;
+  color: #6184d8;
   text-decoration: none;
 }
 
 nav a:active,
 nav a:hover {
-  color: grey;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  color: #50c5b7;
+  border-left: 1px solid #6184d8;
+  border-right: 1px solid #6184d8;
 }

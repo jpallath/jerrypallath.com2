@@ -30,28 +30,43 @@ class Profile extends Component {
         <div className="person">
           <h1>Jerry Pallath</h1>
           <p>
-            There are a lot of words that can describe Jerry Pallath. A quitter
-            isn’t one of them. Developer, technologist, innovator—those are
-            words that he probably likes.{" "}
+            Greetings! My name is Jerry Pallath. I’m going to spend the next
+            couple paragraphs to explain why exactly I’m not a waste of space,
+            but instead a pretty AWESOME developer. (Not trying to toot my own
+            horn).{" "}
           </p>
 
           <p>
-            Jerry’s been in love with development since 2015. He started with an
-            intense Web Development Bootcamp with General Assembly to jumpstart
-            his intellect and excitement (I’d recommend you ask him about his
-            interest in technology before 2015; it’s fun—he won’t stop talking).
-            Since then, he’s worked with a variety of different stacks,
-            companies, and projects.{" "}
+            I’ve been in love with technology since I was a kid. I used to
+            tinker with my computer, sometimes the hardware; but most of the
+            time, I would be hacking the software I used. I felt creative trying
+            to break and add functionality to the services I used. I felt my
+            creativity brewing when I tinkered with my Xanga or MySpace pages
+            (R.I.P by the way). I never expected the technologies behind these
+            services to evolve, but they did and introduced me to the career
+            that always seemed right to me.{" "}
           </p>
 
           <p>
-            Jerry considers himself a fun person. He has a lot of unique hobbies
-            and interests. He wishes he could fish more in life, but then he
-            remembers that he never fished in his life and that is just some
-            strange happy place vision. What he actually loves and can spend
-            hours talking about:{" "}
+            I started my real career in 2015 when I took part in a General
+            Assembly Web Development Immersive Bootcamp. There I learned how to
+            develop Full Stack Applications with Node.js and Rails with some
+            front end development peppered in. I worked as a Front End Engineer
+            at Mediaplanet and Digital Remedy, where I introduced new ideas and
+            components that are still being used after I’ve left.{" "}
           </p>
 
+          <p>
+            I’m in search of opportunities that will let me push the current
+            trends of web development further. I stay competitive with trends
+            and frameworks and I want to work with people looking towards the
+            bleeding edge of technology.
+          </p>
+          <p>
+            Outside of development, I’m a fun person. People like me. I love
+            watching YouTube videos and listen to podcasts to stay up to date on
+            Pop Cult, Theories, and just random geekiness.
+          </p>
           <ul>
             <li>Music: mostly Hip-Hop and Alternative Rock</li>
             <li>Anime and Manga: One Piece, Full Metal Alchemist</li>

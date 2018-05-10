@@ -7,8 +7,8 @@
   left: 50%;
   margin-left: -250px;
   bottom: 2%;
-  background: black;
-  color: white;
+  background: #533a71;
+  color: #6184d8;
   padding: 10px;
   opacity: 0;
   animation: enter 1.5s forwards;
@@ -17,7 +17,7 @@
 
 .project-menu div {
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid #6184d8;
   transition: all 0.5s linear;
 }
 

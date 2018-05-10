@@ -22,7 +22,7 @@ class Projects extends Component {
             "I volunteered to build a Wedding Site for my sister. I had to build out a few different components for this project.",
             "Used a variety of CSS styles; which included adding parallax effects, animations on load, and specific CSS transitions based on new style names given by my React/JS code",
             "In the Gallery container, I used Flickr's Photoset Get Photos API Call to continuously load new photos into my component.  I called the API whenever the user scrolled all the way to the bottom of the page to cause an infinite scroll effect which is only limited by the number of photos in the album",
-            "The Festivities container used the Google Maps API so that I can first center the location of the venue and also place a marker on the venue.",
+            "The Festivities container used the Google Maps Javascript API.  There was the initial ComponentDidMount phase I built for, and updated the code with a ComponentDidUpdate method when I figured that the map wasn't updating when the rest of the component was updating.  This is the most functional container I built.  There is one state being shared by the central container to the children components.  When state is altered by one of the li objects, it changes the entire state and the current props of the sibling component.",
             "RSVP container used a Google Forms back-end so that my sister and her fiance can follow who's interacting with the site without building an entire back-end for them to log into."
           ],
           picture: weddingSite,
