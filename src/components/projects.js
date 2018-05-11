@@ -86,30 +86,8 @@ class Projects extends Component {
       ],
       currentId: 0
     };
-    this.plusClick = this.plusClick.bind(this);
-    this.minusClick = this.minusClick.bind(this);
     this.menuChange = this.menuChange.bind(this);
   }
-
-  plusClick = e => {
-    let newId = this.state.currentId + 1;
-    if (newId === 5) {
-      newId = 0;
-    }
-    this.setState({
-      currentId: newId
-    });
-  };
-
-  minusClick = e => {
-    let newId = this.state.currentId - 1;
-    if (newId === -1) {
-      newId = 4;
-    }
-    this.setState({
-      currentId: newId
-    });
-  };
 
   menuChange = propId => {
     this.setState({ currentId: propId });
@@ -124,15 +102,7 @@ class Projects extends Component {
     ));
     return (
       <div>
-        <div className="project-box">
-          <div onClick={this.minusClick} className="button left">
-            <i className="fas fa-angle-double-left" />
-          </div>
-          {projects}
-          <div onClick={this.plusClick} className="button right">
-            <i className="fas fa-angle-double-right" />
-          </div>
-        </div>
+        <div className="project-box">{projects}</div>
         <ProjectMenu
           projects={this.state.projects}
           currentId={this.state.currentId}

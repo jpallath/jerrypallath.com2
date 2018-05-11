@@ -1,22 +1,19 @@
 .project-menu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   position: fixed;
-  left: 50%;
-  margin-left: -250px;
-  bottom: 2%;
   background: #533a71;
   color: #6184d8;
-  padding: 10px;
+  top: 5%;
+  height: 95%;
+  justify-content: space-between;
   opacity: 0;
   animation: enter 1.5s forwards;
-  z-index: 101;
 }
 
 .project-menu div {
-  padding: 10px;
+  padding: 38% 0%;
+  text-align: center;
   border: 1px solid #6184d8;
   transition: all 0.5s linear;
 }
@@ -38,6 +35,27 @@
     left: 0;
     margin-left: 0;
     width: 100%;
+    flex-direction: row;
+    height: 4%;
+    width: 100%;
+  }
+  .project-menu div {
+    /* padding: 38% 0%; */
+    text-align: center;
+    border: 1px solid #6184d8;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    height: 100%;
+    font-size: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    padding: 0 2px;
+    top: -1px;
+    position: relative;
   }
 }
 

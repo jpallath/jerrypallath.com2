@@ -13,7 +13,7 @@ body {
   animation: fadein 1.5s forwards;
 }
 
-.button {
+/* .button {
   z-index: 100;
   position: absolute;
   top: 50%;
@@ -35,15 +35,7 @@ body {
   background-color: #6184d8;
   box-shadow: 0 5px #50c5b7;
   transform: translateY(4px);
-}
-
-.button.right {
-  right: 5px;
-}
-
-.button.left {
-  left: 5px;
-}
+} */
 
 .contact {
   position: fixed;
