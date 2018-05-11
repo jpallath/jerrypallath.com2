@@ -29,6 +29,17 @@ class Experience extends Component {
       experience: [
         {
           id: 0,
+          company: "Freelance",
+          position: "Web Developer",
+          projects: [
+            "Built out the entire website to greet future attendees and to organize participation. Developed the core logic and flow along with building out a responsive design.",
+            "Used React.js to build out containers and components for specific interactions.  ",
+            "In the Gallery Container, I worked with Flickr’s API to pull pictures from their database and push it to the webpage's front-end.  When more images are pulled through the API, React will just push the photos into the state without re-rendering the page.  This page simulated infinite scroll.",
+            "In the Festivities container, I used the Google Maps JavaScript API to specify destinations in the User Interface which required a ComponentWillUpdate method since the state would be completely altered with the choice of a specific prop.."
+          ]
+        },
+        {
+          id: 1,
           company: "Digital Remedy",
           position: "Front End Developer",
           projects: [
@@ -38,7 +49,7 @@ class Experience extends Component {
           ]
         },
         {
-          id: 1,
+          id: 2,
           company: "Mediaplanet",
           position: "Front End Developer",
           projects: [
@@ -48,7 +59,7 @@ class Experience extends Component {
           ]
         },
         {
-          id: 2,
+          id: 3,
           company: "New York University",
           position: "Student IT Assistant",
           projects: [
