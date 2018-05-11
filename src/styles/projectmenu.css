@@ -4,7 +4,7 @@
   position: fixed;
   background: #533a71;
   color: #6184d8;
-  top: 0%;
+  top: 100%;
   height: 100%;
   justify-content: space-between;
   opacity: 0;
@@ -67,5 +67,6 @@
 @keyframes enter {
   100% {
     opacity: 1;
+    transform: translateY(-100%);
   }
 }
