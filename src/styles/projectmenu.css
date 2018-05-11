@@ -4,15 +4,16 @@
   position: fixed;
   background: #533a71;
   color: #6184d8;
-  top: 5%;
-  height: 95%;
+  top: 0%;
+  height: 100%;
   justify-content: space-between;
   opacity: 0;
   animation: enter 1.5s forwards;
+  z-index: -1;
 }
 
 .project-menu div {
-  padding: 38% 0%;
+  height: 17%;
   text-align: center;
   border: 1px solid #6184d8;
   transition: all 0.5s linear;
