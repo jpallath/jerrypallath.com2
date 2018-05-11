@@ -15,7 +15,7 @@ class ProjectMenu extends Component {
     const { projects } = this.props;
     let projectOptions = projects.map(project => (
       <div key={project.id} onClick={() => this.menuChange(project.id)}>
-        {project.title}
+        <li>{project.title}</li>
       </div>
     ));
     return <div className="project-menu">{projectOptions}</div>;

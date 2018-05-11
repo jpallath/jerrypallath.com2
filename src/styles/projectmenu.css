@@ -17,6 +17,10 @@
   text-align: center;
   border: 1px solid #6184d8;
   transition: all 0.5s linear;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
 }
 
 .project-menu div:hover {
