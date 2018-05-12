@@ -5,7 +5,6 @@ import Profile from "./components/profile";
 import Projects from "./components/projects";
 import Experience from "./components/experience";
 import Contact from "./components/contact";
-import Blog from "./components/blog";
 import "./styles/App.css";
 
 class App extends Component {
@@ -17,7 +16,6 @@ class App extends Component {
           <Route exact path="/" render={props => <Profile />} />
           <Route exact path="/projects" render={props => <Projects />} />
           <Route exact path="/experience" render={props => <Experience />} />
-          <Route exact path="/blog" render={props => <Blog />} />
           <Contact />
         </div>
       </BrowserRouter>
