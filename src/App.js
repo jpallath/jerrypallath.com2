@@ -6,7 +6,7 @@ import Projects from "./components/projects";
 import Experience from "./components/experience";
 import Contact from "./components/contact";
 import Blog from "./components/blog";
-import "./App.css";
+import "./styles/App.css";
 
 class App extends Component {
   render() {

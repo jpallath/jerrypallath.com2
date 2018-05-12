@@ -12,22 +12,9 @@ class Blog extends Component {
     this.loadPosts = this.loadPosts.bind(this);
   }
 
-  componentDidMount() {
-    this.loadPosts();
-  }
+  componentDidMount() {}
 
-  loadPosts = () => {
-    axios
-      .get(this.state.api)
-      .then(res => {
-        let posts = [...this.state.posts, ...res.data.items];
-        return posts;
-      })
-      .then(result => {
-        let content = result.map(post => id: post.id+"1");
-        console.log(content);
-      });
-  };
+  loadPosts = () => {};
 
   render() {
     // let { posts } = this.state;

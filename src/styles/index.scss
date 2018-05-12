@@ -1,3 +1,4 @@
+@import "base.scss";
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +18,7 @@ body {
   z-index: 100;
   position: absolute;
   top: 50%;
-  border: 3px #533a71 solid;
+  border: 3px $primary-color solid;
   width: 50px;
   height: 50px;
   display: -ms-flexbox;
@@ -41,25 +42,25 @@ body {
   position: fixed;
   bottom: 5%;
   right: 5%;
-  border: 2px solid #533a71;
+  border: 2px solid $primary-color;
   border-radius: 50px;
   padding: 12px;
   color: #6184d8;
   z-index: 10000;
-  background: #533a71;
+  background: $primary-color;
   font-size: 25px;
 }
 
 .contact:active {
   background-color: #6184d8;
-  color: #533a71;
+  color: $primary-color;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 .contact.hidden {
   background: #6184d8;
-  color: #533a71;
+  color: $primary-color;
 }
 
 .form.hidden {
@@ -72,13 +73,13 @@ body {
 .form.hidden {
   position: fixed;
   bottom: 5%;
-  border: 2px solid #533a71;
+  border: 2px solid $primary-color;
   border-radius: 50px;
   padding: 7px;
-  color: #533a71;
+  color: $primary-color;
   right: 20%;
   width: 60%;
-  background: #533a71;
+  background: $primary-color;
   color: #6184d8;
   transition: all 1s ease-in;
 }
@@ -94,7 +95,7 @@ body {
 form input.subbed {
   align-self: center;
   border: #6184d8 solid 1px;
-  background: #533a71;
+  background: $primary-color;
   color: #6184d8;
 }
 
