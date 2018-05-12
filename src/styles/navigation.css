@@ -16,11 +16,16 @@ nav a {
   z-index: 10; }
 
 nav a {
-  color: #6184d8;
-  text-decoration: none; }
-
-nav a:active,
-nav a:hover {
   color: #50c5b7;
+  text-decoration: none;
+  background: #533a71;
+  width: 33%;
+  height: 100%;
+  transition: all 0.5s linear; }
+
+nav a:hover,
+nav a:active {
+  background: #50c5b7;
+  color: #533a71;
   border-left: 1px solid #6184d8;
   border-right: 1px solid #6184d8; }

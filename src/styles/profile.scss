@@ -11,7 +11,6 @@
 
 .profile-pic:hover {
   transform: scale(0.9);
-  border: $primary-color 15px dashed;
   transition: all ease-in 1s;
 }
 
@@ -42,7 +41,7 @@
 
 .image-links a:hover {
   cursor: pointer;
-  color: #50c5b7;
+  color: $secondary-color;
 }
 
 .image-container img {

@@ -1,3 +1,4 @@
+@import "base.scss";
 .project {
   display: flex;
   justify-content: center;
@@ -36,7 +37,7 @@ img {
 
 .projectlinks a,
 .projectlinks a:visited {
-  color: #50c5b7;
+  color: $secondary-color;
   text-decoration: none;
 }
 

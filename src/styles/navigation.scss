@@ -1,9 +1,10 @@
+@import "base.scss";
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0%;
-  background: #533a71;
+  background: $primary-color;
   height: 2.5rem;
   z-index: 10;
 }
@@ -18,13 +19,18 @@ nav a {
 }
 
 nav a {
-  color: #6184d8;
+  color: $secondary-color;
   text-decoration: none;
+  background: $primary-color;
+  width: 33%;
+  height: 100%;
+  transition: all 0.5s linear;
 }
 
-nav a:active,
-nav a:hover {
-  color: #50c5b7;
+nav a:hover,
+nav a:active {
+  background: $secondary-color;
+  color: $primary-color;
   border-left: 1px solid #6184d8;
   border-right: 1px solid #6184d8;
 }

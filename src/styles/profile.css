@@ -8,7 +8,6 @@
 
 .profile-pic:hover {
   transform: scale(0.9);
-  border: #533a71 15px dashed;
   transition: all ease-in 1s; }
 
 .profile {
