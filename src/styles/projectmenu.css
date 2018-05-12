@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 450px) {
   .project-menu {
-    top: 0;
+    top: 9%;
     padding-top: 40px;
     z-index: 9;
     bottom: auto;
