@@ -1,13 +1,20 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import BlogMenu from "../components/blogmenu.js";
+import CurrentPost from "../components/currentpost.js";
+
+import "../styles/blog.css";
+
 class Blog extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      posts: [],
+      currentPost: {}
     };
     this.getPosts = this.getPosts.bind(this);
+    this.changePost = this.changePost.bind(this);
   }
 
   getPosts() {
@@ -17,24 +24,34 @@ class Blog extends Component {
       )
       .then(res => {
         console.log(res);
-        this.setState({ posts: res.data.items });
+        this.setState({
+          posts: res.data.items,
+          currentPost: res.data.items[0]
+        });
       });
   }
+
+  changePost = postId => {
+    let specificPost = this.state.posts.filter(post => {
+      return post.id === postId;
+    });
+    this.setState({ currentPost: specificPost[0] });
+  };
 
   componentDidMount() {
     this.getPosts();
   }
 
   render() {
-    function createMarkup(post) {
-      console.log(post);
-      return { __html: post };
-    }
-    let { posts } = this.state;
-    let Blog = posts.map(post => (
-      <div key={post.id} dangerouslySetInnerHTML={createMarkup(post.content)} />
-    ));
-    return <div>{Blog}</div>;
+    return (
+      <div className="blog">
+        <BlogMenu
+          posts={this.state.posts}
+          changePost={this.changePost.bind(this)}
+        />
+        <CurrentPost currentPost={this.state.currentPost} />
+      </div>
+    );
   }
 }
 

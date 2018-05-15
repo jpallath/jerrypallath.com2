@@ -16,6 +16,9 @@ class Navigation extends Component {
         <Link to="/experience">
           <div>Experience</div>
         </Link>
+        <Link to="/blog">
+          <div>Blog</div>
+        </Link>
       </nav>
     );
   }
