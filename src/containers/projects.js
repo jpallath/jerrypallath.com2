@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ProjectMenu from "./projectmenu";
-import ProjectItem from "./projectItem";
+import ProjectMenu from "../components/projectmenu";
+import ProjectItem from "../components/projectItem";
 import fanload from "../images/fanload.png";
 import socialCardMaker from "../images/socialcardmaker.png";
 import weatherly from "../images/weatherly.png";
