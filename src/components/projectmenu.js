@@ -4,9 +4,7 @@ import "../styles/projectmenu.css";
 class ProjectMenu extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      currentId: 0
-    };
+    this.state = {};
   }
   menuChange = propId => {
     this.props.menuChange(propId);

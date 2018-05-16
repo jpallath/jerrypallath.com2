@@ -84,30 +84,40 @@ class Projects extends Component {
           github: "https://github.com/jpallath/inventory"
         }
       ],
-      currentId: 0
+      currentProject: {
+        id: 0,
+        title: "Wedding Site",
+        project: [
+          "I volunteered to build a Wedding Site for my sister. I had to build out a few different components for this project.",
+          "Used a variety of CSS styles; which included adding parallax effects, animations on load, and specific CSS transitions based on new style names given by my React/JS code",
+          "In the Gallery container, I used Flickr's Photoset Get Photos API Call to continuously load new photos into my component.  I called the API whenever the user scrolled all the way to the bottom of the page to cause an infinite scroll effect which is only limited by the number of photos in the album",
+          "The Festivities container used the Google Maps Javascript API.  There was the initial ComponentDidMount phase I built for, and updated the code with a ComponentDidUpdate method when I figured that the map wasn't updating when the rest of the component was updating.  This is the most functional container I built.  There is one state being shared by the central container to the children components.  When state is altered by one of the li objects, it changes the entire state and the current props of the sibling component.",
+          "RSVP container used a Google Forms back-end so that my sister and her fiance can follow who's interacting with the site without building an entire back-end for them to log into."
+        ],
+        picture: weddingSite,
+        github: "https://github.com/jpallath/sherrys_wedding",
+        link: "http://www.thepainumkals.com/"
+      }
     };
     this.menuChange = this.menuChange.bind(this);
   }
 
   menuChange = propId => {
-    this.setState({ currentId: propId });
+    let filteredProject = this.state.projects.filter(
+      project => project.id === propId
+    );
+    filteredProject = filteredProject[0];
+    this.setState({ currentProject: filteredProject });
   };
   render() {
-    const projects = this.state.projects.map(project => (
-      <ProjectItem
-        currentId={this.state.currentId}
-        key={project.id}
-        {...project}
-      />
-    ));
     return (
-      <div>
-        <div className="project-box">{projects}</div>
+      <div className="projects">
         <ProjectMenu
           projects={this.state.projects}
-          currentId={this.state.currentId}
+          currentProject={this.state.currentProject}
           menuChange={this.menuChange.bind(this)}
         />
+        <ProjectItem currentProject={this.state.currentProject} />
       </div>
     );
   }

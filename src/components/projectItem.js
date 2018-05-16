@@ -3,19 +3,25 @@ import "../styles/projectItem.css";
 
 class ProjectItem extends Component {
   render() {
-    const { id, title, project, picture, currentId, github, link } = this.props;
-    const projects = project.map((entry, index) => <p key={index}>{entry}</p>);
+    let { title, project, picture, github, link } = this.props.currentProject;
+    let projectDescription = project.map((proj, index) => (
+      <p key={index}>{proj}</p>
+    ));
     return (
-      <div className={currentId === id ? "project active" : "project inactive"}>
-        <h3>{title}</h3>
-        <img src={picture} alt="project" />
-        <div className="description">
-          <div className="projectlinks">
-            <a href={github}>GitHub</a>
-            {link ? <a href={link}>Project</a> : null}
-          </div>
-          {projects}
+      <div className="project-item">
+        <img src={picture} alt="null" />
+        <div className="project-links">
+          {link ? (
+            <a target="_blank" href={link}>
+              Project
+            </a>
+          ) : null}
+          <a target="_blank" href={github}>
+            Github
+          </a>
         </div>
+        <h1>{title}</h1>
+        <div>{projectDescription}</div>
       </div>
     );
   }
