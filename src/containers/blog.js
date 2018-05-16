@@ -23,7 +23,6 @@ class Blog extends Component {
         "https://www.googleapis.com/blogger/v3/blogs/6644583830471356118/posts?key=AIzaSyCUNY0CfcYkzq9dihhJ_qKOEfyMDUdUKzo"
       )
       .then(res => {
-        console.log(res);
         this.setState({
           posts: res.data.items,
           currentPost: res.data.items[0]
