@@ -16,10 +16,15 @@ class BlogMenu extends Component {
   changePost = (postId, direction) => {
     this.props.changePost(postId, direction);
   };
+
   render() {
     let { posts, currentId } = this.props;
     let menu = posts.map(post => (
-      <li key={post.id} onClick={() => this.triggerPost(post.id)}>
+      <li
+        key={post.id}
+        onClick={() => this.triggerPost(post.id)}
+        className={currentId === post.id ? "active" : null}
+      >
         {post.title}
       </li>
     ));
