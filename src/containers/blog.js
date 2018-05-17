@@ -3,6 +3,8 @@ import axios from "axios";
 
 import BlogMenu from "../components/blogmenu.js";
 import CurrentPost from "../components/currentpost.js";
+import BlogForward from "../components/blogforward";
+import BlogBackward from "../components/blogbackward";
 
 import "../styles/blog.css";
 
@@ -30,11 +32,27 @@ class Blog extends Component {
       });
   }
 
-  changePost = postId => {
-    let specificPost = this.state.posts.filter(post => {
-      return post.id === postId;
-    });
-    this.setState({ currentPost: specificPost[0] });
+  changePost = (postId, direction) => {
+    if (direction === "forward") {
+      let specificPost = this.state.posts.findIndex(post => post.id === postId);
+      let postChange = this.state.posts[specificPost + 1];
+      if (postChange === undefined) {
+        postChange = this.state.posts[specificPost];
+      }
+      this.setState({ currentPost: postChange });
+    } else if (direction === "backward") {
+      let specificPost = this.state.posts.findIndex(post => post.id === postId);
+      let postChange = this.state.posts[specificPost - 1];
+      if (postChange === undefined) {
+        postChange = this.state.posts[specificPost];
+      }
+      this.setState({ currentPost: postChange });
+    } else {
+      let specificPost = this.state.posts.filter(post => {
+        return post.id === postId;
+      });
+      this.setState({ currentPost: specificPost[0] });
+    }
   };
 
   componentDidMount() {
@@ -49,6 +67,16 @@ class Blog extends Component {
           changePost={this.changePost.bind(this)}
         />
         <CurrentPost currentPost={this.state.currentPost} />
+        <div className="blog-direction">
+          <BlogBackward
+            currentId={this.state.currentPost.id}
+            changePost={this.changePost.bind(this)}
+          />
+          <BlogForward
+            currentId={this.state.currentPost.id}
+            changePost={this.changePost.bind(this)}
+          />
+        </div>
       </div>
     );
   }
