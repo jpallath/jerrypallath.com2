@@ -3,8 +3,6 @@ import axios from "axios";
 
 import BlogMenu from "../components/blogmenu.js";
 import CurrentPost from "../components/currentpost.js";
-import BlogForward from "../components/blogforward";
-import BlogBackward from "../components/blogbackward";
 
 import "../styles/blog.css";
 
@@ -65,18 +63,9 @@ class Blog extends Component {
         <BlogMenu
           posts={this.state.posts}
           changePost={this.changePost.bind(this)}
+          currentId={this.state.currentPost.id}
         />
         <CurrentPost currentPost={this.state.currentPost} />
-        <div className="blog-direction">
-          <BlogBackward
-            currentId={this.state.currentPost.id}
-            changePost={this.changePost.bind(this)}
-          />
-          <BlogForward
-            currentId={this.state.currentPost.id}
-            changePost={this.changePost.bind(this)}
-          />
-        </div>
       </div>
     );
   }

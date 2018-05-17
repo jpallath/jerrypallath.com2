@@ -40,9 +40,6 @@
     top: 15%;
   }
   .blog-direction {
-    position: absolute;
-    bottom: 10%;
-    width: 14%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,10 +66,7 @@
         display: none;
       }
       li {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: none;
       }
     }
     .current-post {
