@@ -43,7 +43,7 @@ class Experience extends Component {
           company: "Digital Remedy",
           position: "Front End Developer",
           projects: [
-            "Built out the “Dashboard” and “Link Library” pages for our Nibble Vault App project.  Our app allowed one of associated influencers to check on how much money they generated with our tagged articles.",
+            "Built out the “Dashboard” and “Link Library” pages for our Nibble Vault App project.  Our app allowed one of our associated influencers to check  how much money they generated with our tagged articles.",
             "I generated the final front-end for all interactions a user makes on the page; utilizing mainly CSS3, and fine-tuning incorrect JavaScript blocks to improve the page’s response. I transformed our database calls to tangible information an influencer can understand.  This required PHP to calculate the differences made between each day, week, and month along with the percent change of each time period for the associated Influencer.  Built out three separate submodules that required different database (MySQL) pulls along with the calculations. Presented all of the data utilizing HTML and injecting PHP and building out the experience with CSS3 and JavaScript. ",
             "Day to day required maintenance of the company’s various WordPress sites.  This required understanding 3 different WordPress themes for 8 different blogs.  I fine-tuned and built out plugins that presented new data in our web pages such as the Brand Ambassador shortcode which would pull out a short styled blurb of a featured artist for our HipHopMyWay page.  "
           ]
