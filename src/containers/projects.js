@@ -19,11 +19,12 @@ class Projects extends Component {
           id: 0,
           title: "Wedding Site",
           project: [
-            "I volunteered to build a Wedding Site for my sister. I had to build out a few different components for this project.",
-            "Used a variety of CSS styles; which included adding parallax effects, animations on load, and specific CSS transitions based on new style names given by my React/JS code",
-            "In the Gallery container, I used Flickr's Photoset Get Photos API Call to continuously load new photos into my component.  I called the API whenever the user scrolled all the way to the bottom of the page to cause an infinite scroll effect which is only limited by the number of photos in the album",
+            "I was asked to build an entire website to organize my sister's wedding festivities.  I was required to build out the logic and flow of the site along with figuring out the design and implementation of the containers used.",
+            "Built out specific containers that used components that corresponded with the container's use.",
+            "In the Gallery container, I used Flickr's Photoset Get Photos API Call to continuously load new photos into my component.  I called the API whenever the user scrolled all the way to the bottom of the page to cause an infinite scroll effect which is only limited by the number of photos in the album.  Also, I implemented Lodash's Debounce function to make sure myy function gets called once every second, just to cut down on continuous calls with the API in one instance.",
             "The Festivities container used the Google Maps Javascript API.  There was the initial ComponentDidMount phase I built for, and updated the code with a ComponentDidUpdate method when I figured that the map wasn't updating when the rest of the component was updating.  This is the most functional container I built.  There is one state being shared by the central container to the children components.  When state is altered by one of the li objects, it changes the entire state and the current props of the sibling component.",
-            "RSVP container used a Google Forms back-end so that my sister and her fiance can follow who's interacting with the site without building an entire back-end for them to log into."
+            "RSVP container used a Google Forms back-end so that my sister and her fiance can follow who's interacting with the site without building an entire back-end for them to log into.",
+            "The entire site is built with SASS, so all colors and design elements are passed via a variable instead of hard coded in each and every instance."
           ],
           picture: weddingSite,
           github: "https://github.com/jpallath/sherrys_wedding",
@@ -31,6 +32,22 @@ class Projects extends Component {
         },
         {
           id: 1,
+          title: "JerryPallath.com",
+          project: [
+            "I wanted to showcase my latest and greatest skills with React, specifically, in my portfolio site.  I push out new ideas, elements, and components and this site benefits with getting a majority of these implementations",
+            "First major React Deployed App",
+            "Built out containers for Projects and Blog.",
+            "Projects container works with a Single Project component plus a Projects Menu Component",
+            "Blog container works with a Single Blog component and a Blog List component. There is an API call made to Google's Blogger service that pulls all of my posts from the service and served directly on my front-end.  I implemented React conditional logic to highlight blog links when the corresponding blog post is active.",
+            "The entire site utilizes SASS to implement mixins, variables, and imports.",
+            "I've decided to keep the original look of my page as its image just to show how much it has matured in the past few months."
+          ],
+          picture: pallathdotcom,
+          github: "https://github.com/jpallath/jerrypallath.com2",
+          link: "http://www.jerrypallath.com/"
+        },
+        {
+          id: 2,
           title: "FanLoad",
           project: [
             "The goal of this project was to cement my react skills.  This project utilized React, React-Router, and State Manipulation.  The user is greeted with a list of all available articles that they can read.  The app allows them to add new entries into the list and navigate to them",
@@ -43,7 +60,7 @@ class Projects extends Component {
           link: "https://fast-beyond-80616.herokuapp.com/"
         },
         {
-          id: 2,
+          id: 3,
           title: "SocialCardMaker",
           project: [
             "This was my first original project utilizing React and React-Router.  I looked at ideas on the internet on what to develop with React once you've learned the framework.  I saw this to be a great starting point in jumping in with zero experience",
@@ -53,7 +70,7 @@ class Projects extends Component {
           github: "https://github.com/jpallath/socialcardmaker"
         },
         {
-          id: 3,
+          id: 4,
           title: "Weatherly",
           project: [
             "I wanted to show my mastery of React Router, and show that I can specify specific locations to update with a render.",
@@ -61,17 +78,6 @@ class Projects extends Component {
           ],
           picture: weatherly,
           github: "https://github.com/jpallath/weatherly"
-        },
-        {
-          id: 4,
-          title: "JerryPallath.com",
-          project: [
-            "I needed to make a new portfolio site that let me show off my React skills.",
-            "This project pushed my understanding of React plus deployment and domain hosting (outside of just development)"
-          ],
-          picture: pallathdotcom,
-          github: "https://github.com/jpallath/jerrypallath.com2",
-          link: "http://www.jerrypallath.com/"
         },
         {
           id: 5,
