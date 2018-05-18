@@ -58,8 +58,9 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .blog {
+    background: green;
     .blog-menu {
       height: 8%;
       width: 100%;
