@@ -12,7 +12,13 @@ class ProjectMenu extends Component {
   render() {
     const { projects } = this.props;
     let projectOptions = projects.map(project => (
-      <div key={project.id} onClick={() => this.menuChange(project.id)}>
+      <div
+        key={project.id}
+        onClick={() => this.menuChange(project.id)}
+        className={
+          project.id === this.props.currentProject.id ? "active" : null
+        }
+      >
         <li>{project.title}</li>
       </div>
     ));

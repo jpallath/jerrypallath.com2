@@ -42,6 +42,13 @@
     padding: 2%;
     top: 15%;
   }
+  .current-post.in {
+    opacity: 0;
+    animation: fader 1.5s forwards;
+  }
+  .current-post.out {
+    opacity: 1;
+  }
   .blog-direction {
     display: flex;
     align-items: center;
@@ -85,5 +92,11 @@
   100% {
     opacity: 1;
     transform: translateY(-102%);
+  }
+}
+
+@keyframes fader {
+  100% {
+    opacity: 1;
   }
 }

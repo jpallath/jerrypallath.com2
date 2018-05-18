@@ -4,14 +4,13 @@
   position: fixed;
   background: #533a71;
   color: #533a71;
-  top: 99%;
+  top: 102%;
   height: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
   opacity: 0;
   animation: enter 1.5s forwards; }
 
 .project-menu div {
-  height: 17%;
   text-align: center;
   border: 1px solid #6184d8;
   transition: all 0.5s linear;
@@ -21,7 +20,8 @@
   justify-content: center;
   background-color: #50c5b7; }
 
-.project-menu div:hover {
+.project-menu div:hover,
+.project-menu .active {
   cursor: pointer;
   border-color: #533a71;
   background: #533a71;
