@@ -51,7 +51,7 @@
       background: $primary-color;
     }
     li:hover {
-      background: $primary-color;
+      background: darken($primary-color, 25%);
       cursor: pointer;
     }
   }
