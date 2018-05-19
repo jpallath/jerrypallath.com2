@@ -6,9 +6,7 @@ import BlogMenuItem from "../components/blogmenuitem";
 class BlogMenu extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isHovered: "invisble"
-    };
+    this.state = {};
     this.triggerPost = this.triggerPost.bind(this);
     this.changePost = this.changePost.bind(this);
   }
@@ -26,6 +24,7 @@ class BlogMenu extends Component {
       <BlogMenuItem
         key={post.id}
         {...post}
+        currentId={currentId}
         triggerPost={this.triggerPost.bind(this)}
       />
     ));

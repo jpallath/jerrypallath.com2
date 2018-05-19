@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import ProjectMenu from "../components/projectmenu";
 import ProjectItem from "../components/projectItem";
 import fanload from "../images/fanload.png";
-import socialCardMaker from "../images/socialcardmaker.png";
+import socialCardMaker from "../images/socialcard.png";
 import weatherly from "../images/weatherly.png";
-import pallathdotcom from "../images/pallathcom.png";
-import reactiveInventory from "../images/reactiveinventory.png";
-import weddingSite from "../images/WeddingSite.png";
+import pallathdotcom from "../images/jerrypallath.png";
+import reactiveInventory from "../images/inventory.png";
+import weddingSite from "../images/wedding.png";
 
 import "../styles/projects.css";
 

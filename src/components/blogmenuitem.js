@@ -26,6 +26,8 @@ class BlogMenuItem extends Component {
     let { id, title, author, currentId, published } = this.props;
     published = published.split("T");
     published = published[0];
+    console.log(currentId);
+    console.log(id);
     return (
       <li
         key={id}
