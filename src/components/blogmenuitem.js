@@ -23,11 +23,9 @@ class BlogMenuItem extends Component {
   };
 
   render() {
-    let { id, title, author, currentId, published } = this.props;
+    let { id, title, author, currentId, published, labels } = this.props;
     published = published.split("T");
     published = published[0];
-    console.log(currentId);
-    console.log(id);
     return (
       <li
         key={id}
@@ -39,7 +37,8 @@ class BlogMenuItem extends Component {
         {title}
         <a className={"tooltip " + this.state.hover}>
           by {author.displayName} <br />
-          {published}
+          {published} <br />
+          {labels ? "Tags: " + labels : null}
         </a>
       </li>
     );
