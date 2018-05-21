@@ -9,6 +9,9 @@
   justify-content: flex-start;
   opacity: 0;
   animation: enter 1.5s forwards; }
+  .project-menu h3 {
+    text-align: center;
+    color: #50c5b7; }
 
 .project-menu div {
   text-align: center;

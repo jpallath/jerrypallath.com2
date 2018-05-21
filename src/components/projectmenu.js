@@ -22,7 +22,12 @@ class ProjectMenu extends Component {
         <li>{project.title}</li>
       </div>
     ));
-    return <div className="project-menu">{projectOptions}</div>;
+    return (
+      <div className="project-menu">
+        <h3>Projects</h3>
+        {projectOptions}
+      </div>
+    );
   }
 }
 

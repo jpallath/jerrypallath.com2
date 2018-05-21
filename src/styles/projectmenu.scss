@@ -10,6 +10,10 @@
   justify-content: flex-start;
   opacity: 0;
   animation: enter 1.5s forwards;
+  h3 {
+    text-align: center;
+    color: $secondary-color;
+  }
 }
 
 .project-menu div {
