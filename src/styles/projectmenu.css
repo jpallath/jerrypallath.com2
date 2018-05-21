@@ -32,7 +32,8 @@
 
 @media screen and (max-width: 450px) {
   .project-menu {
-    top: 9%;
+    position: fixed;
+    top: 5%;
     padding-top: 40px;
     z-index: 9;
     bottom: auto;
@@ -44,6 +45,8 @@
     flex-direction: row;
     height: 4%;
     width: 100%; }
+    .project-menu h3 {
+      display: none; }
   .project-menu div {
     /* padding: 38% 0%; */
     text-align: center;
