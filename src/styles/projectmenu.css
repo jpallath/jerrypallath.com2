@@ -8,7 +8,8 @@
   height: 100%;
   justify-content: flex-start;
   opacity: 0;
-  animation: enter 1.5s forwards; }
+  animation: enter 1.5s forwards;
+  z-index: 10; }
   .project-menu h3 {
     text-align: center;
     color: #50c5b7; }
