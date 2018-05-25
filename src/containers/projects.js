@@ -117,13 +117,15 @@ class Projects extends Component {
   };
   render() {
     return (
-      <div className="projects">
+      <div>
         <ProjectMenu
           projects={this.state.projects}
           currentProject={this.state.currentProject}
           menuChange={this.menuChange.bind(this)}
         />
-        <ProjectItem currentProject={this.state.currentProject} />
+        <div className="projects">
+          <ProjectItem currentProject={this.state.currentProject} />
+        </div>
       </div>
     );
   }
