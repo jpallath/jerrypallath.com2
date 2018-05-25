@@ -10,7 +10,8 @@
   justify-content: flex-start;
   opacity: 0;
   animation: enter 1.5s forwards;
-  z-index: 10;
+  z-index: 1;
+  padding-top: 40px;
   h3 {
     text-align: center;
     color: $secondary-color;
