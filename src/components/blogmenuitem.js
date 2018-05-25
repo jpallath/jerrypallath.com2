@@ -35,7 +35,7 @@ class BlogMenuItem extends Component {
         className={currentId === id ? "active" : null}
       >
         {title}
-        <a className={"tooltip " + this.state.hover}>
+        <a title={title} className={"tooltip " + this.state.hover}>
           by {author.displayName} <br />
           {published} <br />
           {labels ? "Tags: " + labels : null}

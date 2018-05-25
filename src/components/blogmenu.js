@@ -29,7 +29,7 @@ class BlogMenu extends Component {
       />
     ));
     return (
-      <ul className="blog-menu">
+      <div className="blog-menu">
         <h3>Posts</h3>
         <div className="blog-direction">
           <BlogBackward
@@ -41,8 +41,8 @@ class BlogMenu extends Component {
             changePost={this.changePost.bind(this)}
           />
         </div>
-        {menu}
-      </ul>
+        <ul className="scroller">{menu}</ul>
+      </div>
     );
   }
 }
