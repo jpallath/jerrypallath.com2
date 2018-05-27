@@ -7,6 +7,7 @@ import weatherly from "../images/weatherly.png";
 import pallathdotcom from "../images/jerrypallath.png";
 import reactiveInventory from "../images/inventory.png";
 import weddingSite from "../images/wedding.png";
+import netflix from "../images/Netflix.png";
 
 import "../styles/projects.css";
 
@@ -32,6 +33,19 @@ class Projects extends Component {
         },
         {
           id: 1,
+          title: "Netflix Clone",
+          project: [
+            "The idea behind this project was to use an accessible clone and see if I could make subsequent GET requests after an initial request for some particular data",
+            "Used The Movie Database API",
+            "The GET request occurring at the topmost container level of my app is to find lists my movie in question has been added to in The Movie Database",
+            "The first GET request will pull a few lists with their corresponding ids, these lists in a smaller container would pull out other movies in their list through another API request. A third API request is made to get more data on a single movie in the final container",
+            "Materialize CSS is used to add a level of design to the overall project"
+          ],
+          picture: netflix,
+          github: "https://github.com/jpallath/movies"
+        },
+        {
+          id: 2,
           title: "JerryPallath.com",
           project: [
             "I wanted to showcase my latest and greatest skills with React, specifically, in my portfolio site.  I push out new ideas, elements, and components and this site benefits with getting a majority of these implementations",
@@ -47,7 +61,7 @@ class Projects extends Component {
           link: "http://www.jerrypallath.com/"
         },
         {
-          id: 2,
+          id: 3,
           title: "FanLoad",
           project: [
             "The goal of this project was to cement my react skills.  This project utilized React, React-Router, and State Manipulation.  The user is greeted with a list of all available articles that they can read.  The app allows them to add new entries into the list and navigate to them",
@@ -60,7 +74,7 @@ class Projects extends Component {
           link: "https://fast-beyond-80616.herokuapp.com/"
         },
         {
-          id: 3,
+          id: 4,
           title: "SocialCardMaker",
           project: [
             "This was my first original project utilizing React and React-Router.  I looked at ideas on the internet on what to develop with React once you've learned the framework.  I saw this to be a great starting point in jumping in with zero experience",
@@ -70,7 +84,7 @@ class Projects extends Component {
           github: "https://github.com/jpallath/socialcardmaker"
         },
         {
-          id: 4,
+          id: 5,
           title: "Weatherly",
           project: [
             "I wanted to show my mastery of React Router, and show that I can specify specific locations to update with a render.",
@@ -80,7 +94,7 @@ class Projects extends Component {
           github: "https://github.com/jpallath/weatherly"
         },
         {
-          id: 5,
+          id: 6,
           title: "Reactive Inventory",
           project: [
             "Quick project utilizing React while I was flying in a plane",
