@@ -42,7 +42,8 @@ class Projects extends Component {
             "Materialize CSS is used to add a level of design to the overall project"
           ],
           picture: netflix,
-          github: "https://github.com/jpallath/movies"
+          github: "https://github.com/jpallath/movies",
+          link: "https://jerrys-netflix.herokuapp.com/"
         },
         {
           id: 2,
