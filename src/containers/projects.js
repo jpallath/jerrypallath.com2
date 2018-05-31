@@ -36,6 +36,7 @@ class Projects extends Component {
           title: "Netflix Clone",
           project: [
             "The idea behind this project was to use an accessible API and see if I could make subsequent GET requests after an initial request for some particular data",
+            "First major project to incorporate Redux.  Redux is used for state management in keeping the state in sync between the header and the body components",
             "Used The Movie Database API",
             "The GET request occurring at the topmost container level of my app is to find lists my movie in question has been added to in The Movie Database",
             "The first GET request will pull a few lists with their corresponding ids, these lists in a smaller container would then pull out other movies in their list through another API request. A third API request is made to get more data on a single movie in the final container",
