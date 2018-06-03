@@ -1,31 +1,31 @@
 @import "base.scss";
 
 .project-item {
-  position: absolute;
-  width: 70%;
-  left: 20vw;
-  top: 1vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  img {
-    width: 50vw;
-  }
-  .project-links {
+    position: absolute;
+    width: 70%;
+    left: 27%;
+    top: 1vh;
     display: flex;
-    flex-direction: row;
-    a {
-      margin: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 50vw;
     }
-  }
+    .project-links {
+        display: flex;
+        flex-direction: row;
+        a {
+            margin: 5px;
+        }
+    }
 }
 
 @media screen and (max-width: 450px) {
-  .project-item {
-    width: 90%;
-    left: 0vw;
-    top: 10vh;
-    padding: 20px;
-  }
+    .project-item {
+        width: 90%;
+        left: 0vw;
+        top: 10vh;
+        padding: 20px;
+    }
 }

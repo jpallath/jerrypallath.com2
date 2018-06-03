@@ -38,6 +38,7 @@ class Projects extends Component {
                     project: [
                         "I felt like my initial build of my netflix clone project was too basic and written rather hastily.  This is a new and improved version with a clearer intention of using the Movie Database API better, along with a better use of Redux in multiple containers",
                         "This project used Bulma and Styled Components for the CSS/Styling.  I just discovered the beauty of Styled Components and would love to continue using it in more projects  Bulma is a no frills solution for simple good looking CSS User Interfaces",
+                        "Utilized LocalStorage.  So when a user reloads or navigates to this a page again, they're brought to the last movie they looked at.",
                         "The project uses the Movie Database API to pull the Top 20 popular movies right now, get data on one movie at a time, and pull information of movies similar to the one movie. Redux keeps the request url intact, plus passes the id of the 1 movie id between the three major movie containers"
                     ],
                     picture: flixa,
