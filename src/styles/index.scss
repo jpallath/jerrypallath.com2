@@ -1,18 +1,20 @@
 @import "base.scss";
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  overflow-x: hidden;
-}
-
+// body {
+//     margin: 0;
+//     padding: 0;
+//     font-family: sans-serif;
+//     overflow-x: hidden;
+// }
+//
 .profile,
 .projects,
 .experience,
 .blog {
-  position: relative;
-  left: 100vw;
-  animation: fadein 1.5s forwards;
+    position: relative;
+    opacity: 0;
+    animation: fadein 1.5s forwards;
+    top: 7vh;
+    position: relative;
 }
 
 /* .button {
@@ -39,98 +41,97 @@ body {
   transform: translateY(4px);
 } */
 
-.contact {
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  border: 2px solid $primary-color;
-  border-radius: 50px;
-  padding: 12px;
-  color: $secondary-color;
-  z-index: 10000;
-  background: $primary-color;
-  font-size: 25px;
-}
-
-.contact:active {
-  background-color: $secondary-color;
-  color: $primary-color;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.contact.hidden {
-  background: $secondary-color;
-  color: $primary-color;
-}
-
-.form.hidden {
-  opacity: 0;
-}
-.form.shown {
-  z-index: 101;
-}
-.form.shown,
-.form.hidden {
-  position: fixed;
-  bottom: 5%;
-  border: 2px solid $primary-color;
-  border-radius: 50px;
-  padding: 7px;
-  color: $primary-color;
-  right: 20%;
-  width: 60%;
-  background: $primary-color;
-  color: $secondary-color;
-  transition: all 1s ease-in;
-}
-
-.form.shown form,
-.form.hidden form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-form input.subbed {
-  align-self: center;
-  border: $secondary-color solid 1px;
-  background: $primary-color;
-  color: $secondary-color;
-}
-
-.message-container,
-.email-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (max-width: 750px) {
-  .form.shown {
-    bottom: 0;
-    right: 0;
-    border-radius: 0;
-    width: 100%;
-  }
-  .contact {
-    right: 1%;
-    bottom: 1%;
-  }
-  .person ul {
-    padding: 0;
-    margin: 10px;
-    width: 90%;
-  }
-}
+// .contact {
+//     position: fixed;
+//     bottom: 5%;
+//     right: 5%;
+//     border: 2px solid $primary-color;
+//     border-radius: 50px;
+//     padding: 12px;
+//     color: $secondary-color;
+//     z-index: 10000;
+//     background: $primary-color;
+//     font-size: 25px;
+// }
+//
+// .contact:active {
+//     background-color: $secondary-color;
+//     color: $primary-color;
+//     box-shadow: 0 5px #666;
+//     transform: translateY(4px);
+// }
+//
+// .contact.hidden {
+//     background: $secondary-color;
+//     color: $primary-color;
+// }
+//
+// .form.hidden {
+//     opacity: 0;
+// }
+// .form.shown {
+//     z-index: 101;
+// }
+// .form.shown,
+// .form.hidden {
+//     position: fixed;
+//     bottom: 5%;
+//     border: 2px solid $primary-color;
+//     border-radius: 50px;
+//     padding: 7px;
+//     color: $primary-color;
+//     right: 20%;
+//     width: 60%;
+//     background: $primary-color;
+//     color: $secondary-color;
+//     transition: all 1s ease-in;
+// }
+//
+// .form.shown form,
+// .form.hidden form {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }
+//
+// form input.subbed {
+//     align-self: center;
+//     border: $secondary-color solid 1px;
+//     background: $primary-color;
+//     color: $secondary-color;
+// }
+//
+// .message-container,
+// .email-container {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+//
+// @media only screen and (max-width: 750px) {
+//     .form.shown {
+//         bottom: 0;
+//         right: 0;
+//         border-radius: 0;
+//         width: 100%;
+//     }
+//     .contact {
+//         right: 1%;
+//         bottom: 1%;
+//     }
+//     .person ul {
+//         padding: 0;
+//         margin: 10px;
+//         width: 90%;
+//     }
+// }
 
 @keyframes fadein {
-  50% {
-    transform: translateX(-125vw);
-  }
-  100% {
-    transform: translateX(-100vw);
-  }
+    50% {
+    }
+    100% {
+        opacity: 1;
+    }
 }

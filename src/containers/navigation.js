@@ -1,27 +1,29 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { StyledLink, Nav } from "../components/styles";
 
-import "../styles/navigation.css";
+// import "../styles/navigation.css";
 
 class Navigation extends Component {
-  render() {
-    return (
-      <nav>
-        <Link to="/">
-          <div>Profile</div>
-        </Link>
-        <Link to="/projects">
-          <div>Projects</div>
-        </Link>
-        <Link to="/experience">
-          <div>Experience</div>
-        </Link>
-        <Link to="/blog">
-          <div>Blog</div>
-        </Link>
-      </nav>
-    );
-  }
+    render() {
+        return (
+            <Nav>
+                <StyledLink to="/">
+                    <div>Profile</div>
+                </StyledLink>
+                <StyledLink to="/projects">
+                    <div>Projects</div>
+                </StyledLink>
+                <StyledLink to="/experience">
+                    <div>Experience</div>
+                </StyledLink>
+                <StyledLink to="/blog">
+                    <div>Blog</div>
+                </StyledLink>
+            </Nav>
+        );
+    }
 }
 
 export default Navigation;

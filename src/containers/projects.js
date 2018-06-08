@@ -10,7 +10,7 @@ import weddingSite from "../images/wedding.png";
 import netflix from "../images/Netflix.png";
 import flixa from "../images/Flixa.png";
 
-import "../styles/projects.css";
+// import "../styles/projects.css";
 
 class Projects extends Component {
     constructor(props) {
