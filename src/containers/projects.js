@@ -9,6 +9,7 @@ import reactiveInventory from "../images/inventory.png";
 import weddingSite from "../images/wedding.png";
 import netflix from "../images/Netflix.png";
 import flixa from "../images/Flixa.png";
+import { Menu, StyledProjects } from "../components/styles";
 
 // import "../styles/projects.css";
 
@@ -125,11 +126,12 @@ class Projects extends Component {
                 id: 0,
                 title: "Wedding Site",
                 project: [
-                    "I volunteered to build a Wedding Site for my sister. I had to build out a few different components for this project.",
-                    "Used a variety of CSS styles; which included adding parallax effects, animations on load, and specific CSS transitions based on new style names given by my React/JS code",
-                    "In the Gallery container, I used Flickr's Photoset Get Photos API Call to continuously load new photos into my component.  I called the API whenever the user scrolled all the way to the bottom of the page to cause an infinite scroll effect which is only limited by the number of photos in the album",
+                    "I was asked to build an entire website to organize my sister's wedding festivities.  I was required to build out the logic and flow of the site along with figuring out the design and implementation of the containers used.",
+                    "Built out specific containers that used components that corresponded with the container's use.",
+                    "In the Gallery container, I used Flickr's Photoset Get Photos API Call to continuously load new photos into my component.  I called the API whenever the user scrolled all the way to the bottom of the page to cause an infinite scroll effect which is only limited by the number of photos in the album.  Also, I implemented Lodash's Debounce function to make sure myy function gets called once every second, just to cut down on continuous calls with the API in one instance.",
                     "The Festivities container used the Google Maps Javascript API.  There was the initial ComponentDidMount phase I built for, and updated the code with a ComponentDidUpdate method when I figured that the map wasn't updating when the rest of the component was updating.  This is the most functional container I built.  There is one state being shared by the central container to the children components.  When state is altered by one of the li objects, it changes the entire state and the current props of the sibling component.",
-                    "RSVP container used a Google Forms back-end so that my sister and her fiance can follow who's interacting with the site without building an entire back-end for them to log into."
+                    "RSVP container used a Google Forms back-end so that my sister and her fiance can follow who's interacting with the site without building an entire back-end for them to log into.",
+                    "The entire site is built with SASS, so all colors and design elements are passed via a variable instead of hard coded in each and every instance."
                 ],
                 picture: weddingSite,
                 github: "https://github.com/jpallath/sherrys_wedding",
@@ -137,6 +139,7 @@ class Projects extends Component {
             }
         };
         this.menuChange = this.menuChange.bind(this);
+        this.changePost = this.changePost.bind(this);
     }
 
     menuChange = propId => {
@@ -146,6 +149,35 @@ class Projects extends Component {
         filteredProject = filteredProject[0];
         this.setState({ currentProject: filteredProject });
     };
+
+    changePost = (postId, direction) => {
+        if (direction === "forward") {
+            console.log(postId);
+            console.log(direction);
+            let specificPost = this.state.projects.findIndex(
+                project => project.id === postId
+            );
+            let postChange = this.state.projects[specificPost + 1];
+            if (postChange === undefined) {
+                postChange = this.state.projects[specificPost];
+            }
+            this.setState({ currentProject: postChange });
+        } else if (direction === "backward") {
+            let specificPost = this.state.projects.findIndex(
+                post => post.id === postId
+            );
+            let postChange = this.state.projects[specificPost - 1];
+            if (postChange === undefined) {
+                postChange = this.state.projects[specificPost];
+            }
+            this.setState({ currentProject: postChange });
+        } else {
+            let specificPost = this.state.projects.filter(project => {
+                return project.id === postId;
+            });
+            this.setState({ currentProject: specificPost[0] });
+        }
+    };
     render() {
         return (
             <div>
@@ -153,10 +185,11 @@ class Projects extends Component {
                     projects={this.state.projects}
                     currentProject={this.state.currentProject}
                     menuChange={this.menuChange.bind(this)}
+                    changePost={this.changePost.bind(this)}
                 />
-                <div className="projects">
+                <StyledProjects className="projects">
                     <ProjectItem currentProject={this.state.currentProject} />
-                </div>
+                </StyledProjects>
             </div>
         );
     }

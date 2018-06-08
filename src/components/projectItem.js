@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { StyledProjectItem } from "./styles";
 // import "../styles/projectItem.css";
 
 class ProjectItem extends Component {
@@ -14,7 +15,7 @@ class ProjectItem extends Component {
             <p key={index}>{proj}</p>
         ));
         return (
-            <div className="project-item">
+            <StyledProjectItem className="project-item">
                 <img src={picture} alt="null" />
                 <div className="project-links">
                     {link ? (
@@ -28,7 +29,7 @@ class ProjectItem extends Component {
                 </div>
                 <h1>{title}</h1>
                 <div>{projectDescription}</div>
-            </div>
+            </StyledProjectItem>
         );
     }
 }
