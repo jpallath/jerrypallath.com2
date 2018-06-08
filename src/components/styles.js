@@ -360,11 +360,18 @@ export const BMenu = styled.div`
         opacity: 0;
     }
     @media (max-width: 450px) {
-        width: 100vw;
-        height: 10vh;
+        flex-direction: row;
+        flex-wrap: nowrap;
         top: 4vh;
+        width: 100%;
+        height: 5vh;
+        align-items: center;
+        justify-content: center;
         h3 {
             display: none;
+        }
+        .blog-arrow {
+            font-size: 50px;
         }
     }
 `;
