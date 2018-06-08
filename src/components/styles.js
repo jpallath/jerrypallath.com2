@@ -115,7 +115,7 @@ export const Envelope = styled.div`
     ${props =>
         props.visibility === "contact shown"
             ? `bottom: 10px;`
-            : `bottom: 180px;`};
+            : `bottom: 210px;`};
     z-index: 1000;
     svg {
         border: 5px solid black;
