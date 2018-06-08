@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 7vh;
+    height: 4vh;
     background: ${colors.primaryColor}
     position: fixed;
     top: 0;
@@ -88,29 +88,74 @@ export const Person = styled.div`
     flex-direction: column;
     width: 95%;
     font-size: 24px;
+    padding-bottom: 10vh;
     h1 {
         text-align: center;
     }
 `;
 
+export const Emphasis = styled.span`
+    color: ${colors.secondaryColor};
+`;
+
 export const ContactMe = styled.div``;
 
 export const Envelope = styled.div`
-    opacity: ${props => (props.visibility === "contact shown" ? 1 : 0)};
     position: fixed;
-    bottom: 5px;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    transition: all 0.5s ease-in;
+    ${props =>
+        props.visibility === "contact shown"
+            ? `bottom: 10px;`
+            : `bottom: 180px;`};
+    z-index: 1000;
     svg {
         border: 5px solid black;
         padding: 5px;
-        background: red;
+        font-size: 50px;
+        border-radius: 50px;
+        transition: 0.5s ease-in all;
+        ${props =>
+            props.visibility === "contact shown"
+                ? `background: ${colors.primaryColor}; color: ${
+                      colors.secondaryColor
+                  }`
+                : `background: ${colors.secondaryColor}; color: ${
+                      colors.primaryColor
+                  }`};
     }
 `;
 
 export const Form = styled.div`
     width: 100%;
+    background: ${colors.primaryColor};
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
     opacity: ${props => (props.visibility === "contact shown" ? 0 : 1)};
+    transition: all ease-in 0.5s;
+    form {
+        transition: all ease-in 0.5s;
+        opacity: ${props => (props.visibility === "contact shown" ? 0 : 1)};
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: ${colors.secondaryColor};
+            font-size: 18px;
+            input,
+            textarea {
+                width: 20vw;
+                border-radius: 50px;
+                text-align: center;
+            }
+        }
+    }
 `;
