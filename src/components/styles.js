@@ -155,8 +155,12 @@ export const Form = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             color: ${colors.secondaryColor};
             font-size: 18px;
+            label {
+                align-self: flex-start;
+            }
             input,
             textarea {
                 width: 20vw;
@@ -304,18 +308,146 @@ export const ExperienceContainer = styled.div`
 `;
 
 export const BMenu = styled.div`
-    width: 15%;
+    font-family: "Tajawal", sans-serif;
+    background: ${colors.secondaryColor};
+    color: ${colors.primaryColor};
+    padding: 2%;
+    width: 15vw;
+    height: 100vh;
     position: fixed;
     left: 0;
-    .scroller {
-        height: 100%;
-    }
+    top: 4vh;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     .blog-direction {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blog-arrow {
+        margin: 10px;
+        font-size: 30px;
+        color: ${colors.primaryColor};
+        transition: ease 0.5s all;
+        a.tooltip {
+            position: absolute;
+            background: ${colors.secondaryColor};
+            left: 105%;
+            width: 100%;
+            height: 5vw;
+            font-size: 15px;
+            top: 10%;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: ${colors.primaryColor};
+            transition: 0.5s all ease-in;
+            border: 3px solid ${colors.primaryColor};
+        }
+        a.tooltip.active {
+            opacity: 1;
+        }
+        :hover {
+            color: ${colors.secondaryColor};
+        }
     }
     a {
         opacity: 0;
     }
+    @media (max-width: 450px) {
+        width: 100vw;
+        height: 10vh;
+        top: 4vh;
+        h3 {
+            display: none;
+        }
+    }
 `;
 
-export const StyledCurrentPost = styled.div``;
+export const Scroller = styled.ul`
+    font-family: "Tajawal", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    height: 60%;
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    ::-webkit-scrollbar {
+        height: 12px;
+        width: 12px;
+        background: ${colors.primaryColor};
+    }
+    ::-webkit-scrollbar-thumb {
+        background: ${colors.secondaryColor};
+        -webkit-border-radius: 1ex;
+        -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: ${colors.secondaryColor};
+    }
+    li {
+        font-family: "Tajawal", sans-serif;
+        font-size: 15px;
+        width: 100%;
+        height: 20%;
+        transition: all ease-in 0.5s;
+        padding: 2%;
+        padding-bottom: 5px;
+        border-bottom: ${colors.primaryColor} 3px solid;
+        position: relative;
+        a.tooltip {
+            position: absolute;
+            background: ${colors.secondaryColor};
+            // left: 105%;
+            font-size: 12px;
+            top: 0%;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: ${colors.primaryColor};
+            transition: 0.5s all ease-in;
+            width: 100%;
+            height: 100%;
+        }
+        a.tooltip.active {
+            opacity: 1;
+        }
+    }
+    li.active {
+        background: ${colors.primaryColor};
+        color: ${colors.secondaryColor}
+    }
+    li:hover {
+        background: ${colors.primaryColor};
+        color: ${colors.secondaryColor}
+        cursor: pointer;
+    }
+    @media (max-width: 450px) {
+        display: none;
+    }
+`;
+
+export const StyledCurrentPost = styled.div`
+    position: absolute;
+    left: 20vw;
+    padding: 0 5%;
+    @media (max-width: 450px) {
+        left: 0;
+        top: 20vh;
+        width: 90%;
+        z-index: -10;
+        padding-bottom: 10vh;
+    }
+`;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import BlogForward from "../components/blogforward";
 import BlogBackward from "../components/blogbackward";
 import BlogMenuItem from "../components/blogmenuitem";
-import { BMenu } from "./styles";
+import { BMenu, Scroller } from "./styles";
 
 class BlogMenu extends Component {
     constructor(props) {
@@ -42,7 +42,7 @@ class BlogMenu extends Component {
                         changePost={this.changePost.bind(this)}
                     />
                 </div>
-                <ul className="scroller">{menu}</ul>
+                <Scroller className="scroller">{menu}</Scroller>
             </BMenu>
         );
     }

@@ -40,7 +40,7 @@ class Contact extends Component {
                         id="mG61Hd"
                     >
                         <p className="email-box">
-                            <label htmlFor="entry.1056946373">Email </label>
+                            <label htmlFor="entry.1056946373">Email</label>
                             <input
                                 type="text"
                                 name="entry.1056946373"
@@ -48,7 +48,7 @@ class Contact extends Component {
                             />
                         </p>
                         <p className="message-box">
-                            <label htmlFor="entry.923648969">Message </label>
+                            <label htmlFor="entry.923648969">Message</label>
                             <textarea
                                 height="24"
                                 type="text"
