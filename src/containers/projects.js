@@ -9,7 +9,7 @@ import reactiveInventory from "../images/inventory.png";
 import weddingSite from "../images/wedding.png";
 import netflix from "../images/Netflix.png";
 import flixa from "../images/Flixa.png";
-import { Menu, StyledProjects } from "../components/styles";
+import { StyledProjects } from "../components/styles";
 
 // import "../styles/projects.css";
 

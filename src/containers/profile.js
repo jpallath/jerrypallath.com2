@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import JerryP1 from "../images/jerryp.jpg";
 import { Prof, ProfImage, Person, Emphasis } from "../components/styles";
 // import "../styles/profile.css";
-import styled from "styled-components";
+// import styled from "styled-components";
 class Profile extends Component {
     render() {
         return (

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { ContactMe, Envelope, Form } from "../components/styles";
 
 class Contact extends Component {

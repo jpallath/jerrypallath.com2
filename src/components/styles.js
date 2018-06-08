@@ -302,3 +302,20 @@ export const ExperienceContainer = styled.div`
         justify-content: center;
     }
 `;
+
+export const BMenu = styled.div`
+    width: 15%;
+    position: fixed;
+    left: 0;
+    .scroller {
+        height: 100%;
+    }
+    .blog-direction {
+        display: none;
+    }
+    a {
+        opacity: 0;
+    }
+`;
+
+export const StyledCurrentPost = styled.div``;
