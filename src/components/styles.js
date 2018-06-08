@@ -91,6 +91,7 @@ export const Person = styled.div`
     width: 95%;
     font-size: 24px;
     padding-bottom: 10vh;
+    font-family: "Tajawal", sans-serif;
     h1 {
         text-align: center;
     }
@@ -98,104 +99,6 @@ export const Person = styled.div`
 
 export const Emphasis = styled.span`
     color: ${colors.secondaryColor};
-`;
-
-//PROJECT
-export const Menu = styled.div`
-   position: fixed;
-   height: 100vh;
-   width: 15%;
-   list-style: none;
-   z-index: 100;
-   top: 3vh;
-   left: 0;
-   background: ${colors.secondaryColor};
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   .project-direction{
-       display: none;
-   }
-   h3 {
-       text-align: center;
-   }
-   .active{
-       background: ${colors.primaryColor};
-       cursor: pointer;
-       color: ${colors.secondaryColor}
-   }
-   li {
-       width: 100%;
-       display: flex;
-       justify-content: center;
-       transition: all ease-in 0.5s;
-       background-color: transparent;
-       color: ${colors.primaryColor}
-       height: 25px;
-       font-size: 20px;
-       &:hover {
-           background: ${colors.primaryColor};
-           cursor: pointer;
-           color: ${colors.secondaryColor}
-       }
-   }
-       @media (max-width: 450px) {
-           flex-direction: row;
-           flex-wrap: nowrap;
-           top: 4vh;
-           width: 100%;
-           height: 5vh;
-           align-items: center;
-           justify-content: center;
-           .project-direction{
-               width: 15%;
-               display: flex;
-               justify-content: space-between;
-               align-items: center;
-               font-size: 50px;
-               .project-arrow{
-                   color: ${colors.primaryColor}
-                   &:hover{
-                       color: white;
-                   }
-               }
-
-           }
-           h3{
-               display: none;
-           }
-           li{
-               display: none;
-           }
-       }
-`;
-
-export const StyledProjects = styled.div`
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 85%;
-   position: absolute;
-   left: 15%;
-   padding-bottom: 10vh;
-   @media (max-width: 450px) {
-       width: 100%;
-       left: 0;
-`;
-
-export const StyledProjectItem = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 20px;
-    img {
-        width: 46%;
-    }
-    .project-links a {
-        margin: 5px;
-        color: ${colors.secondaryColor};
-        text-decoration: none;
-    }
 `;
 
 //CONTACT
@@ -208,6 +111,7 @@ export const Envelope = styled.div`
     align-items: flex-start;
     justify-content: center;
     transition: all 0.5s ease-in;
+    font-family: "Tajawal", sans-serif;
     ${props =>
         props.visibility === "contact shown"
             ? `bottom: 10px;`
@@ -239,6 +143,7 @@ export const Form = styled.div`
     left: 0;
     opacity: ${props => (props.visibility === "contact shown" ? 0 : 1)};
     transition: all ease-in 0.5s;
+    font-family: "Tajawal", sans-serif;
     form {
         transition: all ease-in 0.5s;
         opacity: ${props => (props.visibility === "contact shown" ? 0 : 1)};
@@ -259,5 +164,141 @@ export const Form = styled.div`
                 text-align: center;
             }
         }
+    }
+`;
+//PROJECT
+export const Menu = styled.div`
+    position: fixed;
+    height: 100vh;
+    width: 15%;
+    list-style: none;
+    z-index: 100;
+    top: 3vh;
+    left: 0;
+    background: ${colors.secondaryColor};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Tajawal", sans-serif;
+    .project-direction{
+        display: none;
+    }
+    h3 {
+        text-align: center;
+    }
+    .active{
+        background: ${colors.primaryColor};
+        cursor: pointer;
+        color: ${colors.secondaryColor}
+    }
+    li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: all ease-in 0.5s;
+        background-color: transparent;
+        color: ${colors.primaryColor}
+        height: 25px;
+        font-size: 20px;
+        &:hover {
+            background: ${colors.primaryColor};
+            cursor: pointer;
+            color: ${colors.secondaryColor}
+        }
+    }
+        @media (max-width: 450px) {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            top: 4vh;
+            width: 100%;
+            height: 5vh;
+            align-items: center;
+            justify-content: center;
+            .project-direction{
+                width: 15%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 50px;
+                .project-arrow{
+                    color: ${colors.primaryColor}
+                    &:hover{
+                        color: white;
+                    }
+                }
+
+            }
+            h3{
+                display: none;
+            }
+            li{
+                display: none;
+            }
+        }
+`;
+
+export const StyledProjects = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    position: absolute;
+    left: 15%;
+    padding-bottom: 10vh;
+    font-family: "Tajawal", sans-serif;
+    @media (max-width: 450px) {
+        width: 90%;
+        left: 0;
+        padding: 0 20px;
+    }
+`;
+
+export const StyledProjectItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    img {
+        width: 46%;
+    }
+    .project-links a {
+        margin: 5px;
+        color: ${colors.secondaryColor};
+        text-decoration: none;
+    }
+`;
+
+//Experience
+export const ExperienceContainer = styled.div`
+    width: 90%;
+    font-family: "Tajawal", sans-serif;
+    .og h3 {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: ${colors.secondaryColor};
+        color: white;
+    }
+    .job-containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    }
+    ul {
+        font-size: 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 `;

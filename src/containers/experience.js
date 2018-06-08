@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ExperienceContainer } from "../components/styles";
 // import "../styles/experience.css";
 
 class Experience extends Component {
@@ -71,7 +72,7 @@ class Experience extends Component {
     }
     render() {
         const jobs = this.state.experience.map(exp => (
-            <div className="job-container" key={exp.id}>
+            <div className="job-containers" key={exp.id}>
                 <h3>
                     {exp.company} as a {exp.position}
                 </h3>
@@ -87,18 +88,18 @@ class Experience extends Component {
         ));
         return (
             <div className="experience">
-                <div className="jobs-box">
+                <ExperienceContainer className="jobs-box">
                     <div className="job-container og">
                         <h3>Previous Experience</h3>
                     </div>
                     {jobs}
-                </div>
-                <div className="skills">
+                </ExperienceContainer>
+                <ExperienceContainer className="skills">
                     <div className="og">
                         <h3>Skills</h3>
                     </div>
                     <ul>{skills}</ul>
-                </div>
+                </ExperienceContainer>
             </div>
         );
     }
