@@ -68,6 +68,16 @@ export const ProfImage = styled.div`
         justify-content: space-between;
         font-size: 20px;
         width: 20%;
+        a{
+            color: ${colors.primaryColor}
+            transition: all .5s ease-in;
+            &:hover {
+                color: ${colors.secondaryColor};
+            }
+            &:visited {
+                color: ${colors.primaryColor};
+            }
+        }
     }
     @media (max-width: 450px) {
         img {
@@ -76,7 +86,7 @@ export const ProfImage = styled.div`
         .image-links {
             width: 100vw;
             background: ${colors.secondaryColor};
-            a {
+            a{
                 text-align: center;
                 width: 20%;
                 height: 5vh;
