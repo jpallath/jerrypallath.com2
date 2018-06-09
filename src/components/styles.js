@@ -422,6 +422,7 @@ export const Scroller = styled.ul`
     ::-webkit-scrollbar-thumb {
         background: ${colors.secondaryColor};
         -webkit-border-radius: 1ex;
+        border: 1px solid ${colors.primaryColor}
         -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
     }
 
