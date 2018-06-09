@@ -351,6 +351,7 @@ export const BMenu = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    z-index: 100;
     .blog-direction {
         display: flex;
         align-items: center;
@@ -410,12 +411,8 @@ export const Scroller = styled.ul`
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    height: 60%;
+    height: 50%;
     width: 120%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     overflow-x: hidden;
     ::-webkit-scrollbar {
         height: 12px;
@@ -435,7 +432,7 @@ export const Scroller = styled.ul`
         font-family: "Tajawal", sans-serif;
         font-size: 15px;
         width: 100%;
-        height: 20%;
+        height: 10%;
         transition: all ease-in 0.5s;
         padding: 2%;
         padding-bottom: 5px;
