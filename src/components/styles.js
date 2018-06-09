@@ -163,10 +163,15 @@ export const Form = styled.div`
             }
             input,
             textarea {
-                width: 20vw;
+                width: 50vw;
                 border-radius: 50px;
                 text-align: center;
             }
+        }
+        .subbed {
+            background: ${colors.secondaryColor};
+            border-color: ${colors.secondaryColor};
+            border-radius: 50px;
         }
     }
 `;
@@ -199,11 +204,14 @@ export const Menu = styled.div`
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         transition: all ease-in 0.5s;
         background-color: transparent;
         color: ${colors.primaryColor}
         height: 25px;
         font-size: 20px;
+        font-size: 1em;
+        text-align: center;
         &:hover {
             background: ${colors.primaryColor};
             cursor: pointer;
@@ -224,6 +232,8 @@ export const Menu = styled.div`
                 justify-content: space-between;
                 align-items: center;
                 font-size: 50px;
+                position: relative;
+                top: 5px;
                 .project-arrow{
                     color: ${colors.primaryColor}
                     &:hover{
@@ -237,6 +247,11 @@ export const Menu = styled.div`
             }
             li{
                 display: none;
+            }
+        }
+        @media (max-width: 900px){
+            li{
+                font-size: 10px;
             }
         }
 `;
@@ -363,7 +378,7 @@ export const BMenu = styled.div`
         flex-direction: row;
         flex-wrap: nowrap;
         top: 4vh;
-        width: 100%;
+        width: 100vw;
         height: 5vh;
         align-items: center;
         justify-content: center;
