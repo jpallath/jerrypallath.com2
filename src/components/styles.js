@@ -302,7 +302,7 @@ export const StyledProjectItem = styled.div`
 
 //Experience
 export const ExperienceContainer = styled.div`
-    width: 90%;
+    width: 100%;
     font-family: "Tajawal", sans-serif;
     .og h3 {
         width: 100vw;
