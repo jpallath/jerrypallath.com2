@@ -12,7 +12,6 @@ class Contact extends Component {
         this.showForm = this.showForm.bind(this);
     }
     showForm = e => {
-        console.log("hi");
         this.state.className === "contact shown"
             ? this.setState({
                   className: "contact hidden",

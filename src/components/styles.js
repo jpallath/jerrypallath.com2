@@ -38,6 +38,9 @@ export const StyledLink = styled(Link)`
     &:hover {
         border-bottom: ${colors.secondaryColor} 5px solid;
     }
+    &:visited {
+        color: ${colors.secondaryColor};
+    }
 `;
 
 //profile
