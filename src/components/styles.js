@@ -436,7 +436,7 @@ export const Scroller = styled.ul`
         transition: all ease-in 0.5s;
         padding: 2%;
         padding-bottom: 5px;
-        border-bottom: ${colors.primaryColor} 3px solid;
+        ${"" /* border-bottom: ${colors.primaryColor} 3px solid; */}
         position: relative;
         a.tooltip {
             position: absolute;
