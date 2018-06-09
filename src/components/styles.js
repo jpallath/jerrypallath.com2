@@ -478,7 +478,7 @@ export const StyledCurrentPost = styled.div`
     padding: 0 5%;
     @media (max-width: 450px) {
         left: 0;
-        top: 20vh;
+        top: 5vh;
         width: 90%;
         z-index: -10;
         padding-bottom: 10vh;
