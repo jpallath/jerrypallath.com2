@@ -332,6 +332,8 @@ export const ExperienceContainer = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 0 10px;
+        margin: 10px 0;
     }
 `;
 
