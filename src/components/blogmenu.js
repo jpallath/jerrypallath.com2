@@ -18,7 +18,6 @@ class BlogMenu extends Component {
     changePost = (postId, direction) => {
         this.props.changePost(postId, direction);
     };
-
     render() {
         let { posts, currentId } = this.props;
         let menu = posts.map(post => (

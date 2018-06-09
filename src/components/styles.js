@@ -135,7 +135,7 @@ export const Envelope = styled.div`
 `;
 
 export const Form = styled.div`
-    width: 100%;
+    width: 100vw;
     background: ${colors.primaryColor};
     padding: 15px;
     position: fixed;
