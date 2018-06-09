@@ -57,9 +57,10 @@ class Profile extends Component {
                     </p>
 
                     <p>
-                        I started my real career in 2015 when I took part in a
+                        I started my real career in 2015 when I took part in{" "}
                         <Emphasis>
-                            General Assembly Web Development Immersive Bootcamp
+                            General Assembly's Web Development Immersive
+                            Bootcamp
                         </Emphasis>. There I learned how to develop Full Stack
                         Applications with Node.js and Rails with some front end
                         development peppered in. I worked as a Front End
