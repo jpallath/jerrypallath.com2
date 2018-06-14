@@ -290,6 +290,7 @@ export const StyledProjectItem = styled.div`
     flex-direction: column;
     align-items: center;
     font-size: 20px;
+    padding: 2%;
     img {
         width: 46%;
     }

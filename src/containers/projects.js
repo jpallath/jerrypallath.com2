@@ -9,6 +9,7 @@ import reactiveInventory from "../images/inventory.png";
 import weddingSite from "../images/wedding.png";
 import netflix from "../images/Netflix.png";
 import flixa from "../images/Flixa.png";
+import tivix from "../images/tivix.png";
 import { StyledProjects } from "../components/styles";
 
 // import "../styles/projects.css";
@@ -35,6 +36,20 @@ class Projects extends Component {
                 },
                 {
                     id: 1,
+                    title: "Todo and Blog App",
+                    project: [
+                        "This was a front-end challenge that required me to use my React/Redux skills",
+                        "Used React, Redux, Redux-Thunk, Axios, and Styled Components",
+                        "I had to greet a user to a list of users that they could click and then navigate and see what's on their todo list and posts list",
+                        "The TodoList and PostList containers allow the user to make new posts and todos.  The activity is tracked and each new item is checked to see if it's the smallest or largest in specific categories.  Buttons at the bottom of the container allow a user to filter based on the smallest or largest title and body of a container.",
+                        "The brains of the operation is built with Redux talking with the API.  Redux actions are formulated with thunks since the actions required more complex payloads than earlier projects.  The look and feel is basically done through Styled Components."
+                    ],
+                    picture: tivix,
+                    github: "https://github.com/jpallath/tivix",
+                    link: "https://tivix-jerry.herokuapp.com/"
+                },
+                {
+                    id: 2,
                     title: "Flixa (Netflix Clone V2)",
                     project: [
                         "I felt like my initial build of my netflix clone project was too basic and written rather hastily.  This is a new and improved version with a clearer intention of using the Movie Database API better, along with a better use of Redux in multiple containers",
@@ -47,7 +62,7 @@ class Projects extends Component {
                     link: "https://jetflix-jerry.herokuapp.com/"
                 },
                 {
-                    id: 2,
+                    id: 3,
                     title: "Netflix Clone",
                     project: [
                         "The idea behind this project was to use an accessible API and see if I could make subsequent GET requests after an initial request for some particular data",
@@ -63,7 +78,7 @@ class Projects extends Component {
                     link: "https://jerrys-netflix.herokuapp.com/"
                 },
                 {
-                    id: 3,
+                    id: 4,
                     title: "JerryPallath.com",
                     project: [
                         "I wanted to showcase my latest and greatest skills with React, specifically, in my portfolio site.  I push out new ideas, elements, and components and this site benefits with getting a majority of these implementations",
@@ -79,7 +94,7 @@ class Projects extends Component {
                     link: "http://www.jerrypallath.com/"
                 },
                 {
-                    id: 4,
+                    id: 5,
                     title: "FanLoad",
                     project: [
                         "The goal of this project was to cement my react skills.  This project utilized React, React-Router, and State Manipulation.  The user is greeted with a list of all available articles that they can read.  The app allows them to add new entries into the list and navigate to them",
@@ -92,7 +107,7 @@ class Projects extends Component {
                     link: "https://fast-beyond-80616.herokuapp.com/"
                 },
                 {
-                    id: 5,
+                    id: 6,
                     title: "SocialCardMaker",
                     project: [
                         "This was my first original project utilizing React and React-Router.  I looked at ideas on the internet on what to develop with React once you've learned the framework.  I saw this to be a great starting point in jumping in with zero experience",
@@ -102,7 +117,7 @@ class Projects extends Component {
                     github: "https://github.com/jpallath/socialcardmaker"
                 },
                 {
-                    id: 6,
+                    id: 7,
                     title: "Weatherly",
                     project: [
                         "I wanted to show my mastery of React Router, and show that I can specify specific locations to update with a render.",
@@ -112,7 +127,7 @@ class Projects extends Component {
                     github: "https://github.com/jpallath/weatherly"
                 },
                 {
-                    id: 7,
+                    id: 8,
                     title: "Reactive Inventory",
                     project: [
                         "Quick project utilizing React while I was flying in a plane",
