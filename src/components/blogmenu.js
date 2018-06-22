@@ -4,6 +4,7 @@ import BlogBackward from "../components/blogbackward";
 import BlogMenuItem from "../components/blogmenuitem";
 import { BMenu, Scroller } from "./styles";
 
+
 class BlogMenu extends Component {
     constructor(props) {
         super(props);
