@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const colors = {
-  primaryColor: "#533a71",
-  secondaryColor: "#50c5b7"
+  primaryColor: "white",
+  secondaryColor: "purple"
 };
 
 // Nav
