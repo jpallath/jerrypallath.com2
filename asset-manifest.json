@@ -1,9 +1,16 @@
 {
-  "main.css": "static/css/main.42d083fd.css",
-  "main.css.map": "static/css/main.42d083fd.css.map",
-  "main.js": "static/js/main.98e30153.js",
-  "main.js.map": "static/js/main.98e30153.js.map",
-  "static/media/fanload.png": "static/media/fanload.4fd809ff.png",
-  "static/media/jerryp.jpg": "static/media/jerryp.e53b20b3.jpg",
-  "static/media/socialcardmaker.png": "static/media/socialcardmaker.747db3e8.png"
+  "main.css": "static/css/main.40df051b.css",
+  "main.css.map": "static/css/main.40df051b.css.map",
+  "main.js": "static/js/main.cbc22cb0.js",
+  "main.js.map": "static/js/main.cbc22cb0.js.map",
+  "static/media/Flixa.png": "static/media/Flixa.0f23a82f.png",
+  "static/media/Netflix.png": "static/media/Netflix.a0638e11.png",
+  "static/media/fanload.png": "static/media/fanload.cfccc300.png",
+  "static/media/inventory.png": "static/media/inventory.f41674cf.png",
+  "static/media/jerryp.jpg": "static/media/jerryp.8cecbbd2.jpg",
+  "static/media/jerrypallath.png": "static/media/jerrypallath.2c1ded50.png",
+  "static/media/socialcard.png": "static/media/socialcard.328ab673.png",
+  "static/media/tivix.png": "static/media/tivix.a89494b7.png",
+  "static/media/weatherly.png": "static/media/weatherly.b25a21ca.png",
+  "static/media/wedding.png": "static/media/wedding.0eadbdae.png"
 }

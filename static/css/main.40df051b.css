@@ -1,0 +1,2 @@
+.App{position:absolute;left:0;width:100%}.blog,.experience,.profile,.projects{opacity:0;-webkit-animation:fadein 1.5s forwards;animation:fadein 1.5s forwards;top:7vh;position:relative}.projects{top:9vh}.experience{top:1.5vh}.blog,.experience{padding-bottom:10vh}@-webkit-keyframes fadein{to{opacity:1}}@keyframes fadein{to{opacity:1}}
+/*# sourceMappingURL=main.40df051b.css.map*/
